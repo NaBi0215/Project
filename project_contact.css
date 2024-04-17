@@ -162,8 +162,12 @@
     text-align: center;
     line-height: 30px;
 }
+/* .contact_txt_what{
+    
+} */
 .contact_txt_what_more{
     position: relative;
+    z-index: -1;
 }
 .contact_txt_what_more input[type="text"]{
     background-image: url("./img/contact_txt_bg.png");
@@ -175,6 +179,7 @@
     padding: 50px;
     margin-left: 180px;
     border: none;
+    
 }
 .contact_txt_what_more button{
     font-size: 22px;
@@ -186,6 +191,7 @@
     position: absolute;
     bottom: 10px;
     right: 190px;
+    z-index: -1;
 }
 .footer img{
     margin-top: 50px;
