@@ -162,6 +162,9 @@
     text-align: center;
     line-height: 30px;
 }
+.contact_txt_what_more{
+    position: relative;
+}
 .contact_txt_what_more input[type="text"]{
     background-image: url("./img/contact_txt_bg.png");
     background-size: cover;
@@ -171,7 +174,7 @@
     width: 470px;
     padding: 50px;
     margin-left: 180px;
-    /* border: none; */
+    border: none;
 }
 .contact_txt_what_more button{
     font-size: 22px;
@@ -181,8 +184,8 @@
     border: 1px solid #6db861;
     color: #6db861;
     position: absolute;
-    bottom: 0px;
-    right: 200px;
+    bottom: 10px;
+    right: 190px;
 }
 .footer img{
     margin-top: 50px;
