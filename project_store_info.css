@@ -10,8 +10,8 @@
     position: fixed;
 }
 .main-header .hb{
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     background-color:rgba(98, 98, 98, 0.541);
     display: flex;
     flex-direction: column;
@@ -36,36 +36,33 @@
     top: 100%;
     right: 0px;
     width: 50%;
-    height: 687px;
+    height: 520px;
     z-index: 10;
     position: relative;
-}
-.main-nav-pic1{
-    position: absolute;
-    top: 0px;
-    right: 100px;
 }
 .main-nav-pic2{
     position: absolute;
     bottom: 0px;
-    right: 80px
+    right: 50px;
+    z-index: -1
 }
 .main-nav-pic3{
     position: absolute;
-    bottom: -60px;
-    right: 200px;
+    bottom: -42px;
+    right: 50px;
+    width: 50%;
 }
 .main-nav-pic4{
     position: absolute;
-    bottom: -15px;
+    bottom: -10px;
     right: 10px;
 }
 .main-header .main-nav a{
     display: block;
-    padding: 40px 80px;
+    padding: 32px 80px;
     letter-spacing: 8px;
     text-decoration: none;
-    font-size: 28px;
+    font-size: 20px;
     color: white;
     text-decoration: underline rgba(255, 255, 255, 0.37);
     text-underline-offset: .8em;
@@ -75,28 +72,30 @@
     display: block;
 }
 .logo img{
-    width: 70%;
+    width: 50%;
 }
+
 .store_info_title h2{
-    font-size: 38px;
+    font-size: 32px;
     font-weight: bold;
     text-align: center;
-    padding-top: 150px;
-    padding-bottom: 100px;
+    padding-top: 100px;
+    padding-bottom: 50px;
 }
 .store_info_title h3{
-    font-size: 22px;
+    font-size: 20px;
     color:#6DB861;
     text-align: center;
     letter-spacing: 8px;
     line-height: 65px;
-    padding-bottom: 100px;
+    /* padding-bottom: 100px; */
 }
 .store_info_area{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-left: 500px;
+    margin-left: 300px;
+    margin-top: 100px;
     margin-bottom: 50px;
     gap: 250px;
 }
@@ -104,40 +103,41 @@
     position: relative;
 }
 .store_info_card h5{
-    font-size: 24px;
+    /* font-size: 28x; */
     font-weight: bold;
     position: absolute;
-    top: 60px;
-    left: 23px;
+    top: 55px;
+    left: 13px;
 }
 .store_info_card:nth-child(2) > h5 ,
 .store_info_card:nth-child(3) > h5{
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     position: absolute;
-    top: 60px;
-    left: 40px;
+    top: 55px;
+    left: 25px;
 }
 .store_info_card:nth-child(5) > h5{
-    font-size: 24px;
+    font-size: 18px;
     font-weight: bold;
     position: absolute;
-    top: 60px;
-    left: 35px;
+    top: 55px;
+    left: 20px;
 }
 .store_info_cards img{
     z-index: -1;
-    padding: 6px 0px;
+    padding: 20px 0px;
+    width: 65%;
 }
 .store_info_txt{
     position: absolute;
-    right: 350px;
-    top: 510px;
+    right: 150px;
+    top: 410px;
     z-index: -1;
 }
 .store_info_txt h5{
-    font-size: 24px;
-    padding: 65px;
+    font-size: 22px;
+    padding: 56px;
 }
 .footer img{
     width: 100%;

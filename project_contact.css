@@ -10,8 +10,8 @@
     position: fixed;
 }
 .main-header .hb{
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     background-color:rgba(98, 98, 98, 0.541);
     display: flex;
     flex-direction: column;
@@ -36,36 +36,33 @@
     top: 100%;
     right: 0px;
     width: 50%;
-    height: 687px;
+    height: 520px;
     z-index: 10;
     position: relative;
-}
-.main-nav-pic1{
-    position: absolute;
-    top: 0px;
-    right: 100px;
 }
 .main-nav-pic2{
     position: absolute;
     bottom: 0px;
-    right: 80px
+    right: 50px;
+    z-index: -1
 }
 .main-nav-pic3{
     position: absolute;
-    bottom: -60px;
-    right: 200px;
+    bottom: -42px;
+    right: 50px;
+    width: 50%;
 }
 .main-nav-pic4{
     position: absolute;
-    bottom: -15px;
+    bottom: -10px;
     right: 10px;
 }
 .main-header .main-nav a{
     display: block;
-    padding: 40px 80px;
+    padding: 32px 80px;
     letter-spacing: 8px;
     text-decoration: none;
-    font-size: 28px;
+    font-size: 20px;
     color: white;
     text-decoration: underline rgba(255, 255, 255, 0.37);
     text-underline-offset: .8em;
@@ -75,20 +72,20 @@
     display: block;
 }
 .logo img{
-    width: 70%;
-}   
+    width: 50%;
+}
 .contact_title h2{
-    font-size: 38px;
+    font-size: 32px;
     font-weight: bold;
     text-align: center;
-    padding-top: 150px;
-    padding-bottom: 100px;
+    padding-top: 100px;
+    padding-bottom: 80px;
 }
 .contact_area{
     margin-bottom: 50px;
 }
 .contact_title h3{
-    font-size: 22px;
+    font-size: 18px;
     color:#6DB861;
     text-align: center;
     letter-spacing: 8px;
@@ -101,7 +98,7 @@
 }
 .contact_area_pic img:nth-child(2){
     position: absolute;
-    bottom:100px;
+    bottom:0px;
     left: 0px;
 }
 .contact_area_pic img:nth-child(1){
@@ -109,38 +106,38 @@
     right: 0px;
 }
 .contact_txt{
-    margin-left: 400px;
+    margin-left: 200px;
 }
 .contact_txt_name{
-    font-size: 28px;
+    font-size: 20px;
     margin: 100px;
 }
 .contact_txt_name input[type="text"] {
     background: #6db86142;    
-    font-size: 28px; 
+    font-size: 18px; 
     padding: 0px 10px; 
-    width: 300px; 
-    height: 50px; 
-    margin-left: 275px;
+    width: 250px; 
+    height: 40px; 
+    margin-left: 168px;
 }
 .contact_txt_mail{
-    font-size: 28px;
+    font-size: 20px;
     margin: 100px;
 }
 .contact_txt_mail input[type="email"] {
     background: #6db86142;    
-    font-size: 28px; 
+    font-size: 18px; 
     padding: 0px 10px; 
-    width: 300px;
-    height: 50px; 
-    margin-left: 50px;
+    width: 250px;
+    height: 40px; 
+    margin-left: 10px;
 }
 .contact_txt_what h5{
-    font-size: 28px;
+    font-size: 22px;
     margin: 100px;
 }
 .checkbox_area{
-    font-size: 20px;
+    font-size: 16px;
     margin: 100px;
     margin-left: 200px;
     
@@ -165,31 +162,29 @@
     text-align: center;
     line-height: 30px;
 }
-.contact_txt_what_more{
-    position: relative;
-    z-index: -1;
-}
 .contact_txt_what_more input[type="text"]{
     background-image: url("./img/contact_txt_bg.png");
     background-size: cover;
     border-radius: 85px;
-    height: 350px;
-    width: 800px;
-    padding: 50px;
     font-size: 20px;
+    height: 200px;
+    width: 470px;
+    padding: 50px;
+    margin-left: 180px;
     /* border: none; */
 }
 .contact_txt_what_more button{
-    font-size: 28px;
+    font-size: 22px;
     border-radius: 85px;
-    padding: 20px 50px;
+    padding: 3px 20px;
     background-color: transparent;
     border: 1px solid #6db861;
     color: #6db861;
     position: absolute;
     bottom: 0px;
-    right: 120px;
+    right: 200px;
 }
 .footer img{
+    margin-top: 50px;
     width: 100%;
 }

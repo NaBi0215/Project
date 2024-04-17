@@ -10,8 +10,8 @@
     position: fixed;
 }
 .main-header .hb{
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     background-color:rgba(98, 98, 98, 0.541);
     display: flex;
     flex-direction: column;
@@ -36,36 +36,33 @@
     top: 100%;
     right: 0px;
     width: 50%;
-    height: 687px;
+    height: 520px;
     z-index: 10;
     position: relative;
-}
-.main-nav-pic1{
-    position: absolute;
-    top: 0px;
-    right: 100px;
 }
 .main-nav-pic2{
     position: absolute;
     bottom: 0px;
-    right: 80px
+    right: 50px;
+    z-index: -1
 }
 .main-nav-pic3{
     position: absolute;
-    bottom: -60px;
-    right: 200px;
+    bottom: -42px;
+    right: 50px;
+    width: 50%;
 }
 .main-nav-pic4{
     position: absolute;
-    bottom: -15px;
+    bottom: -10px;
     right: 10px;
 }
 .main-header .main-nav a{
     display: block;
-    padding: 40px 80px;
+    padding: 32px 80px;
     letter-spacing: 8px;
     text-decoration: none;
-    font-size: 28px;
+    font-size: 20px;
     color: white;
     text-decoration: underline rgba(255, 255, 255, 0.37);
     text-underline-offset: .8em;
@@ -75,7 +72,7 @@
     display: block;
 }
 .logo img{
-    width: 70%;
+    width: 50%;
 }
 .banner_pic img{
     display:block;
@@ -83,10 +80,10 @@
     width: 55%;
 }
 .room_area h2{
-    font-size: 38px;
+    font-size: 32px;
     font-weight: bold;
     text-align: center;
-    margin: 150px 0px;
+    margin: 100px 0px;
 }
 .room_area_pic{
     width: 100%;
@@ -94,16 +91,16 @@
 }
 .room_area_pic h3{
     text-align: center;
-    font-size: 32px;
+    font-size: 28px;
     margin: 80px;
 }
 .room_area_pic p{
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: 5px;
     line-height: 35px;
 }
 .room_area_pic span{
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: 5px;
     line-height: 85px;
     border-bottom: 3px solid rgba(150, 150, 150, 0.651);
@@ -111,17 +108,15 @@
 .room_area_cards{
     display: flex;
     place-content: center;
-    margin-top: 115px;
-    gap: 250px;
+    margin-top: 100px;
+    gap: 80px;
 }
 .card p{
+    font-size: 16px;
     text-align: center;
-    line-height: 35px;
+    line-height: 15px;
     letter-spacing: 5px;
-    padding-top: 20px;
-}
-.card:nth-child(1) >p{
-    padding-top: 35px;
+    padding-top: 30px;
 }
 .buyme_area{
     position: relative;
@@ -129,8 +124,8 @@
 .buyme_pic{
     display: flex;
     place-content: center;
-    padding-left: 300px;
-    gap: 350px;
+    padding-left: 220px;
+    gap: 150px;
 }
 .buyme_pic img{
     z-index: -3;
@@ -138,14 +133,14 @@
 .buyme_txt{
     display: flex;
     place-content: center;
-    gap: 378px;
+    gap: 168px;
     position: absolute;
-    bottom: 47px;
-    left: 460px;
+    bottom: 38px;
+    left: 450px;
     z-index: -1;
 }
 .buyme_txt a{
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
     text-decoration: none;
     color: rgba(77, 77, 77, 0.509);
@@ -154,7 +149,7 @@
     margin: 150px 0px;
 }
 .room_area_2 span{
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: 5px;
     line-height: 65px;
     padding-top: 50px;
