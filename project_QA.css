@@ -1,0 +1,129 @@
+#menu-switch{
+    display: none;
+}
+.main-header{
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    /* position: relative; */
+    position: fixed;
+}
+.main-header .hb{
+    width: 80px;
+    height: 80px;
+    background-color:rgba(98, 98, 98, 0.541);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 20;
+}
+.main-header .hb span{
+    width: 80%;
+    height: 2px;
+    background-color: white;
+}
+#menu-switch:checked ~ .main-header .hb{
+    background-color:#A37C66;
+}
+.main-header .main-nav{
+    display: none;
+    background-color:#A37C66;
+    top: 100%;
+    right: 0px;
+    width: 50%;
+    height: 687px;
+    z-index: 10;
+    position: relative;
+}
+.main-nav-pic1{
+    position: absolute;
+    top: 0px;
+    right: 100px;
+    z-index: -1;
+}
+.main-nav-pic2{
+    position: absolute;
+    bottom: 0px;
+    right: 80px;
+    z-index: -1;
+}
+.main-nav-pic3{
+    position: absolute;
+    bottom: -60px;
+    right: 200px;
+    z-index: -1;
+}
+.main-nav-pic4{
+    position: absolute;
+    bottom: -15px;
+    right: 10px;
+    z-index: -1;
+}
+.main-header .main-nav a{
+    display: block;
+    padding: 40px 80px;
+    letter-spacing: 8px;
+    text-decoration: none;
+    font-size: 28px;
+    color: white;
+    text-decoration: underline rgba(255, 255, 255, 0.37);
+    text-underline-offset: .8em;
+    text-decoration-thickness: 2px;
+}
+#menu-switch:checked ~ .main-header .main-nav{
+    display: block;
+}
+.logo img{
+    width: 70%;
+}
+.QA_area{
+    position: relative;
+    z-index: -1;
+}
+.QA_area h2{
+    font-size: 38px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+.QA_area_pic{
+    position: absolute;
+    right: 350px;
+    top: 10px;
+}
+.QA_area_pic img:nth-child(4){
+    position: absolute;
+    right: -150px;
+}
+.QA_cards{
+    margin-left: 300px;
+    margin-bottom: 50px;
+}
+.QA_card{
+    padding: 20px 0px;
+}
+.QA_card h3{
+    font-size: 28px;
+    font-weight: bold;
+    color: #6DB861;
+    letter-spacing: 3px;
+    padding-top: 80px;
+
+}
+.QA_card h4{
+    font-size: 20px;
+    padding-top: 35px;
+    letter-spacing: 2px;
+    text-decoration: underline rgba(150, 150, 150, 0.651);
+    text-underline-offset: .5em;
+    text-decoration-thickness: 3px;
+}
+.footer img{
+    width: 100%;
+}
