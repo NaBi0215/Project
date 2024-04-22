@@ -6,6 +6,13 @@
     <title>Document</title>
     <link rel="stylesheet" href="./cssreset.css">
     <link rel="stylesheet" href="./project_index.css">
+    <!-- 引入 Owl Carousel CSS -->
+    <link rel="stylesheet" href="path/to/owl.carousel.css">
+    <!-- 引入 Owl Carousel JS -->
+    <script src="path/to/owl.carousel.js"></script>
+    <!-- 引入 jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
 <body>
     <input type="checkbox" id="menu-switch">
@@ -29,22 +36,18 @@
             <a href="./project_store_info.html">門市資訊</a>
             <a href="./project_QA.html">植友QA</a>
             <a href="./project_contact.html">聯絡我們</a>
-                <div class="main-nav-pic2">
-                <img src="./img/main_nav_hb02.png" alt="">
-            </div>
-            <div class="main-nav-pic3">
-                <img src="./img/main_nav_hb03.png" alt="">
-            </div>
-            <div class="main-nav-pic4">
-                <img src="./img/main_nav_hb04.png" alt="">
-            </div>
         </nav>
     </header>
-    <div class="banner_area">
-        <div class="banner_pic">
-            <img src="./img/banner_03.png" alt="">
-        </div>
+    <!-- <div class="owl-carousel">
+        <div class="item"><img src="./img/banner_01.png" alt=""></div>
+        <div class="item"><img src="./img/banner_02.png" alt=""></div>
+        <div class="item"><img src="./img/banner_03.png" alt=""></div>
+        <!-- 其他項目 -->
     </div>
+    <div class="banner_switch">
+        <button class="play">Play</button>
+        <button class="stop">Stop</button>
+    </div> -->
     <div class="title_area">
         <img src="./img/2357052-2 1.png" alt="">
         <h2>將自然帶回家,添上屬於你的綠色幸福</h2>
@@ -64,7 +67,8 @@
                 書桌,窗台邊以及餐桌上都能增添室內的質感 。葉上紋理是植物的天然色素,不會褪色,也沒有規則。每棵植株的紋理都是獨一無二,無可取代。</p>
             </div>
             <div class="popular_pic">
-            <img src="./img/Group 51.png" alt="">
+                <div class="popular_pic_bg"></div>
+                <img src="./img/Group 51.png" alt="">
             </div>
         </div>
     </div>
@@ -118,7 +122,53 @@
         </div>
     </div>
     <div class="footer">
-        <img src="./img/footer.png" alt="">
+        <div class="triangle_1"></div>
+        <div class="rectangle"></div>
+        <div class="triangle_2"></div>
+        <div class="footer_circle_1"></div>
+        <div class="footer_circle_2"></div>
+        <div class="footer_circle_3"></div>
+        <div class="footer_circle_4"></div>
+        <div class="footer_circle_5"></div>
+        <div class="footer_circle_6"></div>
+        <div class="footer_circle_7"></div>
+        <div class="footer_circle_8"></div>
+        <div class="footer_circle_9"></div>
+        <div class="footer_txt">
+            <div class="footer_txt_card_1">
+                <p>Copyright © 2024 植選Choice. All rights reserved.</p>
+                <p>本網站僅供學習使用 無任何商業用途<br>
+                    This website is for educational use only.</p>
+            </div>
+            <div class="footer_txt_card_2">
+                <p>植選Choice<br>
+                    台灣桃園市桃園區愛二街吉林路236號<br>
+                    (03)438-1234</p>
+            </div>
+            <div class="footer_txt_card_3">
+                <p>Open 每週一 二 三 六 日 10:30-20:30<br>
+                    Close 每週四 五<br> 
+                    (詳細情形請參照ig公告)</p>
+            </div>
+        </div>
     </div>
+<!-- Owl Carousel JS -->
+<script>// 這是你的 JavaScript 代碼
+    var owl = $('.owl-carousel');
+    owl.owlCarousel({
+        items: 4,
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        autoplayTimeout: 1000,
+        autoplayHoverPause: true
+    });
+    $('.play').on('click', function() {
+        owl.trigger('play.owl.autoplay', [1000])
+    })
+    $('.stop').on('click', function() {
+        owl.trigger('stop.owl.autoplay')
+    })
+</script>
 </body>
 </html>
