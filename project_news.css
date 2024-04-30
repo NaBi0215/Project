@@ -119,15 +119,6 @@
     display: flex;
     place-content: center;
     gap: 30px;
-    overflow-x: auto; /* 水平滚动 */
-    scroll-snap-type: x mandatory; /* 强制水平滚动 */
-}
-@media screen and (max-width: 768px) {
-    .news_cards_area_2{
-        overflow-x: visible; /* 在桌面视图上不需要滚动 */
-        flex-direction: row; /* 桌面视图下水平排列 */
-        gap: 10px; /* 间距 */
-    }
 }
 .news_cards_area_2 :nth-child(2) >p,.news_cards_area_2 :nth-child(3) >p{
     padding-top: 80px;
@@ -174,23 +165,9 @@
     color:rgb(102, 102, 102);
     font-size: clamp(14px,1.822vw, 14px);
 }
-@media screen and (max-width: 768px) {
-    #mobile-script{
+@media screen and (min-width: 768px) {
+    #mobile_script {
         display: block;
-    }
-    .news_card_2{
-        position: relative;
-        transition: max-width 0.3s ease;
-    }
-    .switch_btn{
-        display: block;
-    }
-    .hideimg{
-        display: none;
-    }
-    .news_cards_area_2{
-        gap:5px;
-        padding: 0px 10px;
     }
 }
 .news_cards_area_3{

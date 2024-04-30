@@ -9,6 +9,12 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- 引入 jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" id="mobile_script"></script>
+        <!-- 引入 Owl Carousel CSS -->
+        <link rel="stylesheet" href="./OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
+        <!-- 引入 Owl Carousel JS -->
+        <script src="./OwlCarousel2-2.3.4/dist/owl.carousel.js" id="mobile_script"></script>    
 </head>
 <body>
     <input type="checkbox" id="menu-switch">
@@ -57,19 +63,19 @@
             </div>
         </div>
         <div data-aos="fade-right"data-aos-offset="300"data-aos-easing="ease-in-sine" data-aos-duration="1000">
-            <div class="news_cards_area_2">
-                <div class="news_card_2">
+            <div class="news_cards_area_2 owl-carousel owl-theme">
+                <div class="news_card_2 item">
                     <img src="./img/lesson_01.png" alt="">
                     <a href="#">演講課程</a>
                     <p>想替家中珍愛的空氣鳳梨換家<br>
                         卻苦無靈感嗎?</p>
                     <span>24.03.31</span>
                 </div>
-                <div class="news_card_2">
+                <div class="news_card_2 item">
                     <img src="./img/lesson_02.png" alt="">
                     <p>那你一定要來參加我們3/31舉辦的<br>[ 環保玩植栽 ]<br>演講課程</p>
                 </div>
-                <div class="news_card_2">
+                <div class="news_card_2 item">
                     <img src="./img/lesson_03.png" alt="">
                     <p>我們重金禮聘了植栽達人-NABI老師<br>教導大家如何用隨手就可取得到的小物<br>裝飾自己珍愛的空氣鳳梨</p>
                 </div>
@@ -147,5 +153,23 @@
     <script>
         AOS.init();
     </script>   
+    <script id="mobile_script">
+        $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+    </script>
 </body>
 </html>
