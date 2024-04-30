@@ -39,6 +39,11 @@
     position: relative;
     z-index: 10;
 }
+@media screen and (max-width: 768px) {
+    .main-header .main-nav{
+        width: 100%;
+    }
+}
 .main-header .main-nav a{
     display: block;
     padding: 32px 80px;
@@ -60,22 +65,25 @@
     width: 50%;
 }
 .products_area{
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .products_area h2{
-    font-size: 28px;
+    font-size: clamp(28px, 3.6458vw, 28px);
     font-weight: bold;
     text-align: center;
     padding-top: 100px;
     padding-bottom: 50px;
 }
 .products_area h3{
-    font-size: 24px;
+    font-size: clamp(24px, 3.125vw, 24px);
     font-weight: bold;
     color: #6DB861 ;
     margin-left: 320px;
 }
-.products_area h3:hover{
+@media screen and (max-width: 768px) {
+    .products_area h3{
+        margin: 0;
+    }
 }
 .products_cards_area{
     display: flex;
@@ -86,6 +94,24 @@
     height: 250px;
     margin: 50px 200px;
     gap: 30px;
+}
+@media screen and (max-width: 768px) {
+    .products_cards_area{
+        display: none;
+    }
+    .products_show{
+        /* display: block; */
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        gap:0px;
+        padding: 0px;
+        margin: 30px 60px;
+        height: auto;
+    }
+    .products_show img{
+        width: 100%;
+    }
 }
 .products_card{
     padding-top: 20px;
@@ -114,46 +140,17 @@
 .products_card img:hover{
     transform: scale(1.2);
 }
-
-/* .products_area_pic_1{
-    position: relative;
-} */
-/* .products_area_pic_1 img{
-    position: absolute;
-    top: -7px;
-    left:350px;
-    width: 7%;
+@media screen and (max-width: 768px) {
+    .products_card img{
+        transition: none;
+    }    
+    .products_card img:hover{
+        transform: initial;
+    }    
 }
-.products_area_pic_2{
-    position: relative;
-}
-.products_area_pic_2 img{
-    position: absolute;
-    top: 31px ;
-    right:250px;
-    z-index: -1;
-    width: 13%;
-}
-.products_area_pic_3{
-    position: relative;
-}
-.products_area_pic_3 img{
-    position: absolute;
-    top: 0px;
-    left:250px;
-    width: 6.2%;
-}
-.products_area_pic_4{
-    position: relative;
-}
-.products_area_pic_4 img{
-    position: absolute;
-    top: 10px;
-    left:450px;
-    width: 6%;
-} */
 .ig_pic_area{
     margin: 50px 0px;
+    position: relative;
 }
 .ig_pic_area_1{
     display: flex;
@@ -174,6 +171,29 @@
 .ig_pic_area a:hover{
     opacity: 1;
 }
+.ig_pic_area .icon{
+    /* display: none; */
+    position: absolute;
+    top:50px
+}
+@media screen and (max-width: 768px) {
+    .ig_pic_area_1{
+
+    }
+    .ig_pic_area_2{
+        display: none;
+    }
+}
+/* @media screen and (max-width: 768px) {
+    .ig_pic_area .icon{
+        display: block;
+        position: absolute;
+
+    }
+    .ig_pic_area{
+        position: relative;
+    }
+} */
 .footer{
     position: relative;
 }
@@ -298,7 +318,7 @@
     right: 35px;
 }
 .footer_txt_card_1{
-    color: white;
+    color: rgba(255, 255, 255, 0.72);
     font-size: 10px;
     letter-spacing: 3px;
     line-height: 25px;
@@ -308,7 +328,7 @@
     z-index: 5;
 }
 .footer_txt_card_2{
-    color: white;
+    color: rgba(255, 255, 255, 0.72);
     font-size: 12px;
     letter-spacing: 3px;
     line-height: 25px;
@@ -318,7 +338,7 @@
     z-index: 5;
 }
 .footer_txt_card_3{
-    color: white;
+    color: rgba(255, 255, 255, 0.72);
     font-size: 12px;
     letter-spacing: 3px;
     line-height: 25px;
@@ -326,4 +346,45 @@
     right: 80px;
     top: 165px;
     z-index: 5;
+}
+@media screen and (max-width: 768px) {
+    .footer_txt_card_2{
+        display: none;
+    }
+    .footer_txt_card_3{
+        display: none;
+    }
+    .triangle_1{
+        display: none;
+    }
+    .triangle_2{
+        display: none;
+    }
+    .footer_circle_1{
+        display: none;
+    }
+    .footer_circle_2{
+        display: none;
+    }
+    .footer_circle_3{
+        display: none;
+    }
+    .footer_circle_4{
+        display: none;
+    }
+    .footer_circle_5{
+        display: none;
+    }
+    .footer_circle_6{
+        display: none;
+    }
+    .footer_circle_7{
+        display: none;
+    }
+    .footer_circle_8{
+        display: none;
+    }
+    .footer_circle_9{
+        display: none;
+    }
 }

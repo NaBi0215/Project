@@ -248,7 +248,7 @@ iframe {
     right: 35px;
 }
 .footer_txt_card_1{
-    color: white;
+    color: rgba(255, 255, 255, 0.72);
     font-size: 10px;
     letter-spacing: 3px;
     line-height: 25px;
@@ -258,7 +258,7 @@ iframe {
     z-index: 5;
 }
 .footer_txt_card_2{
-    color: white;
+    color: rgba(255, 255, 255, 0.72);
     font-size: 12px;
     letter-spacing: 3px;
     line-height: 25px;
@@ -268,7 +268,7 @@ iframe {
     z-index: 5;
 }
 .footer_txt_card_3{
-    color: white;
+    color: rgba(255, 255, 255, 0.72);
     font-size: 12px;
     letter-spacing: 3px;
     line-height: 25px;

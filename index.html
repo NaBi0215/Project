@@ -6,17 +6,40 @@
     <title>Document</title>
     <link rel="stylesheet" href="./cssreset.css">
     <link rel="stylesheet" href="./project_index.css">
-    <!-- 引入 Owl Carousel CSS -->
-    <link rel="stylesheet" href="path/to/owl.carousel.css">
-    <!-- 引入 Owl Carousel JS -->
-    <script src="path/to/owl.carousel.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <!-- 引入 jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- 引入 Owl Carousel CSS -->
+    <link rel="stylesheet" href="./OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
+    <!-- 引入 Owl Carousel JS -->
+    <script src="./OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+    <script>
+        $(function () {
+    $('.fadein').hide().fadeIn(3000);
+    });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+  // 監聽滾動事件
+    window.addEventListener("scroll", function() {
+    // 取得元素距離頂部的距離
+    var elementTop = document.querySelector('.popular_title_pic').getBoundingClientRect().top;
+    // 設定閾值，表示使用者滑到元素上方的多遠時觸發效果
+    var threshold = window.innerHeight * 0.8;
+
+    // 如果元素進入視窗上方閾值內，則添加.fade-in類，觸發淡入效果
+    if (elementTop < threshold) {
+    document.querySelector('.popular_title_pic').classList.add('fade-in');
+    }
+    });
+});
+    </script>
+    
 
 </head>
 <body>
     <input type="checkbox" id="menu-switch">
-    <header class="main-header">
+        <header class="main-header">
         <a href="./index.html">
             <div class="logo">
                 <img src="./img/mylogo.png" alt="">
@@ -38,33 +61,38 @@
             <a href="./project_contact.html">聯絡我們</a>
         </nav>
     </header>
-    <!-- <div class="owl-carousel">
+    <div class="owl-carousel">
         <div class="item"><img src="./img/banner_01.png" alt=""></div>
         <div class="item"><img src="./img/banner_02.png" alt=""></div>
         <div class="item"><img src="./img/banner_03.png" alt=""></div>
-        <!-- 其他項目 -->
+        
     </div>
     <div class="banner_switch">
         <button class="play">Play</button>
         <button class="stop">Stop</button>
-    </div> -->
+    </div>
     <div class="title_area">
         <img src="./img/2357052-2 1.png" alt="">
-        <h2>將自然帶回家,添上屬於你的綠色幸福</h2>
-        <h3>讓綠色溫柔擁抱,家居充滿生命力</h3>
+        <h2 class="fadein">將自然帶回家,添上屬於你的綠色幸福</h2>
+        <h3 class="fadein">讓綠色溫柔擁抱,家居充滿生命力</h3>
         <h4>植物を家へ持ち帰り、<br>
             お気に入りの植物を飾って癒しの空間にしましょう</h4>
     </div>
     <div class="popular_area">
         <div class="popular_title">
+            <div class="popular_title_pic">
+                <img src="./img/title_vine.png" alt="">
+            </div>
             <h3>本月主打</h3>
         </div>
         <div class="popular_explain">
             <div class="popular_explain_txt">
             <h4>粉紅公主曼綠絨</h4>
             <h5>屬名 Philodendron</h5>
-            <p>因為不太適合受陽光直射,易枯黃,因此適合擺放於室內。
-                書桌,窗台邊以及餐桌上都能增添室內的質感 。葉上紋理是植物的天然色素,不會褪色,也沒有規則。每棵植株的紋理都是獨一無二,無可取代。</p>
+            <p>因為不太適合受陽光直射,易枯黃,因此適合擺放於室內。<br>
+                書桌、窗台邊以及餐桌上都能增添室內的質感 。<br>
+                葉上紋理是植物的天然色素,不會褪色,也沒有規則。<br>
+                每棵植株的紋理都是獨一無二,無可取代。</p>
             </div>
             <div class="popular_pic">
                 <div class="popular_pic_bg"></div>
@@ -124,7 +152,7 @@
     <div class="footer">
         <div class="triangle_1"></div>
         <div class="rectangle"></div>
-        <div class="triangle_2"></div>
+        <div class="triangle_2" ></div>
         <div class="footer_circle_1"></div>
         <div class="footer_circle_2"></div>
         <div class="footer_circle_3"></div>
@@ -153,18 +181,19 @@
         </div>
     </div>
 <!-- Owl Carousel JS -->
-<script>// 這是你的 JavaScript 代碼
+<script>
     var owl = $('.owl-carousel');
+
     owl.owlCarousel({
-        items: 4,
+        items: 2,
         loop: true,
         margin: 10,
         autoplay: true,
-        autoplayTimeout: 1000,
+        autoplayTimeout: 2000,
         autoplayHoverPause: true
     });
-    $('.play').on('click', function() {
-        owl.trigger('play.owl.autoplay', [1000])
+    $('.play').on('click', () => {
+        owl.trigger('play.owl.autoplay', [2000])
     })
     $('.stop').on('click', function() {
         owl.trigger('stop.owl.autoplay')

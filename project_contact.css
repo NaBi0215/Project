@@ -59,6 +59,16 @@
 .logo img{
     width: 50%;
 }
+/* .contact_area{
+    position: relative;
+}
+.fa-hand-point-down{
+    position: absolute;
+    top:20px
+} */
+body {
+    background: #6db86142;    
+}
 .contact_title h2{
     font-size: 28px;
     font-weight: bold;
@@ -71,40 +81,31 @@
 }
 .contact_title h3{
     font-size: 16px;
-    color:#6DB861;
-    padding-left: 380px;
+    color:#727272;
+    text-decoration: underline #7272725b;
+    text-underline-offset: .5em;
+    text-decoration-thickness: 1.2px;
+    padding-left: 300px;
     letter-spacing: 10px;
     /* line-height: 40px; */
     padding-bottom: 60px;
 }
 .contact_title h4{
     font-size: 16px;
-    color:#6DB861;
+    color:#727272;
     letter-spacing: 10px;
     line-height: 40px;
-    padding-left: 530px;
+    padding-left: 525px;
     padding-bottom: 100px;
-}
-.contact_area_pic{
-    position: relative;
-    z-index: 1;
-}
-.contact_area_pic img:nth-child(2){
-    position: absolute;
-    bottom:0px;
-    left: 0px;
-}
-.contact_area_pic img:nth-child(1){
-    position: absolute;
-    right: 0px;
 }
 .contact_txt{
     padding-left: 200px;
 }
 .contact_txt_name{
     font-size: 18px;
+    color:#727272;
     margin: 50px 0px;
-    margin-left: 150px;
+    margin-left: 100px;
 }
 .contact_txt_name input[type="text"] {
     background: #6db86142;    
@@ -112,10 +113,11 @@
     padding: 0px 10px; 
     width: 200px; 
     height: 30px;
-    margin-left: 150px;
+    margin-left: 200px;
 }
 .contact_txt_mail{
     font-size: 18px;
+    color:#727272;
     margin: 10px 0px;
     margin-left: 100px;
 }
@@ -129,11 +131,13 @@
 }
 .contact_txt_what h5{
     font-size: 18px;
+    color:#727272;
     margin: 50px 0px;
-    margin-left: 150px;
+    margin-left: 100px;
 }
 .checkbox_area{
     font-size: 16px;
+    color:#727272;
     margin: 50px 0px;
     margin-left: 250px;
 }
@@ -160,8 +164,8 @@
 .contact_txt_what_more{
     position: relative;
 }
-.contact_txt_what_more input[type="text"]{
-    background-color: #ff9191;
+.contact_txt_what_more input[type="textarea"]{
+    background-color: #6db86142;
     border-radius: 85px;
     font-size: 20px;
     height: 200px;
@@ -306,7 +310,7 @@
     right: 35px;
 }
 .footer_txt_card_1{
-    color: white;
+    color: rgba(255, 255, 255, 0.72);
     font-size: 10px;
     letter-spacing: 3px;
     line-height: 25px;
@@ -316,7 +320,7 @@
     z-index: 5;
 }
 .footer_txt_card_2{
-    color: white;
+    color: rgba(255, 255, 255, 0.72);
     font-size: 12px;
     letter-spacing: 3px;
     line-height: 25px;
@@ -326,7 +330,7 @@
     z-index: 5;
 }
 .footer_txt_card_3{
-    color: white;
+    color: rgba(255, 255, 255, 0.72);
     font-size: 12px;
     letter-spacing: 3px;
     line-height: 25px;
