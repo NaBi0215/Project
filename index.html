@@ -5,34 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./cssreset.css">
-    <link rel="stylesheet" href="./project_index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <!-- 引入 jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- 引入 Owl Carousel CSS -->
-    <!-- <link rel="stylesheet" href="/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css"> -->
+    <link rel="stylesheet" href="/OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
     <!-- 引入 Owl Carousel JS -->
-    <!-- <script src="/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script> -->
+    <script src="/OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+    <link rel="stylesheet" href="./project_index.css">
     <script>
         $(function () {
-    $('.fadein').hide().fadeIn(3000);
-    });
-    </script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-  // 監聽滾動事件
-    window.addEventListener("scroll", function() {
-    // 取得元素距離頂部的距離
-    var elementTop = document.querySelector('.popular_title_pic').getBoundingClientRect().top;
-    // 設定閾值，表示使用者滑到元素上方的多遠時觸發效果
-    var threshold = window.innerHeight * 0.8;
+            $('.fadein').hide().fadeIn(3000);
+        });
 
-    // 如果元素進入視窗上方閾值內，則添加.fade-in類，觸發淡入效果
-    if (elementTop < threshold) {
-    document.querySelector('.popular_title_pic').classList.add('fade-in');
-    }
-    });
-});
+        document.addEventListener("DOMContentLoaded", function() {
+            // 監聽滾動事件
+            window.addEventListener("scroll", function() {
+                // 取得元素距離頂部的距離
+                var elementTop = document.querySelector('.popular_title_pic').getBoundingClientRect().top;
+                // 設定閾值，表示使用者滑到元素上方的多遠時觸發效果
+                var threshold = window.innerHeight * 0.8;
+
+                // 如果元素進入視窗上方閾值內，則添加.fade-in類，觸發淡入效果
+                if (elementTop < threshold) {
+                document.querySelector('.popular_title_pic').classList.add('fade-in');
+                }
+            });
+        });
     </script>
     
 
