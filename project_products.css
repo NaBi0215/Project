@@ -64,9 +64,6 @@
 .logo img{
     width: 50%;
 }
-.products_area{
-    /* overflow: hidden; */
-}
 .products_area h2{
     font-size: clamp(28px, 3.6458vw, 28px);
     font-weight: bold;
@@ -166,6 +163,7 @@
 }
 .products_card img{
     transition: transform .8s ease;
+    border-radius: 35px;
 }
 .products_card img:hover{
     transform: scale(1.2);
@@ -177,9 +175,6 @@
     .products_card img:hover{
         transform: initial;
     }    
-    .pic_change_1{
-
-    }
 }
 .ig_pic_area{
     margin: 50px 0px;
@@ -230,16 +225,6 @@
         display: none;
     }
 }
-/* @media screen and (max-width: 768px) {
-    .ig_pic_area .icon{
-        display: block;
-        position: absolute;
-
-    }
-    .ig_pic_area{
-        position: relative;
-    }
-} */
 .footer{
     position: relative;
 }

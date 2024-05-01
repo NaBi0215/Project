@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./cssreset.css">
     <link rel="stylesheet" href="./project_store_info.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha384-LbZjSxrHzb6ZQWh/1+m3UQh7N9xPxMDydTWT+oF8bJfXStsd+pit+7Pwv5Q14FSA" crossorigin="anonymous">
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
 </head>
 <body>
     <input type="checkbox" id="menu-switch">
@@ -72,6 +73,7 @@
     </div>
     <div class="googlemap">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d748.908389536206!2d121.31518654261158!3d24.98876752960401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34681ee4c0a479dd%3A0x6a31ebad228433a2!2zMzMw5qGD5ZyS5biC5qGD5ZyS5Y2A5ZCJ5p6X6Lev!5e0!3m2!1szh-TW!2stw!4v1713774104703!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="plant_pic"></div>
     </div>
     <div class="footer">
         <div class="triangle_1"></div>
@@ -104,5 +106,33 @@
             </div>
         </div>
     </div>
+    <script>
+        
+        document.addEventListener("DOMContentLoaded", function() {
+            // 監聽滾動事件
+            window.addEventListener("scroll", function() {
+                // 取得元素距離頂部的距離
+                var elementTop = document.querySelector('.plant_pic').getBoundingClientRect().top;
+                // 設定閾值，表示使用者滑到元素上方的多遠時觸發效果
+                var threshold = window.innerHeight * 0.8;
+                
+                // 如果元素進入視窗上方閾值內，則添加.fade-in類，觸發淡入效果
+                if (elementTop < threshold) {
+                    let x = document.querySelector('.plant_pic');
+                    x.innerHTML = `<dotlottie-player 
+                    src="https://lottie.host/b47b061e-030e-4c2b-98b8-79c44ea0c00c/8ETvo3z888.json" 
+                    id="dplayer" 
+                    background="transparent" 
+                    speed="1" 
+                    style="width: 300px; height: 300px" 
+                    direction="1" 
+                    playMode="normal" 
+                    autoplay>
+                </dotlottie-player>`;
+                    
+                }
+            });
+        });
+    </script>
 </body>
 </html>
