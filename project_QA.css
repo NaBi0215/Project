@@ -87,15 +87,16 @@
 .QA_card{
     padding: 20px 0px;
 }
-.QA_card h3{
+.QA_card button{
+    border: 0;
+    outline: 0;
+    background-color: transparent;
     font-size: 18px;
     font-weight: bold;
     color: #6DB861;
     letter-spacing: 3px;
-    padding-top: 50px;
-
 }
-.QA_card h4{
+.QA_card p{
     font-size: 16px;
     padding-top: 35px;
     letter-spacing: 2px;

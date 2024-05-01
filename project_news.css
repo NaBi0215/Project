@@ -64,6 +64,36 @@
 .logo img{
     width: 50%;
 }
+.news_area_pic{
+    position: relative;
+    opacity: 0;
+    animation: fadeIn 3s ease forwards;
+}
+@keyframes fadeIn {
+    from {
+      opacity: 0; /* 初始狀態，完全透明 */
+    }
+    to {
+      opacity: 1; /* 結束狀態，完全不透明 */
+    }
+}
+@media screen and (max-width: 768px) {
+    .news_area_pic{
+        display: none;
+    }
+}
+@media screen and (max-width: 996px) {
+    .news_area_pic{
+        right: 110px;
+        top: 5px;    
+    }
+}
+.news_area_pic img{
+    position: absolute;
+    width: 10%;
+    left: 590px;
+    top: -3px;
+}
 .news_area h2{
     font-size: clamp(28px, 3.6458vw, 28px);
     font-weight: bold;
@@ -164,11 +194,6 @@
 .news_card_2 span{
     color:rgb(102, 102, 102);
     font-size: clamp(14px,1.822vw, 14px);
-}
-@media screen and (min-width: 768px) {
-    #mobile_script {
-        display: block;
-    }
 }
 .news_cards_area_3{
     display: flex;

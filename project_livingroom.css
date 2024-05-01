@@ -75,6 +75,36 @@
     text-align: center;
     padding: 100px 0px;
 }
+.room_area_title_pic{
+    position: relative;
+    opacity: 0;
+    animation: fadeIn 3s ease forwards;
+}
+@keyframes fadeIn {
+    from {
+      opacity: 0; /* 初始狀態，完全透明 */
+    }
+    to {
+      opacity: 1; /* 結束狀態，完全不透明 */
+    }
+}
+@media screen and (max-width: 768px) {
+    .room_area_title_pic{
+        display: none;
+    }
+}
+@media screen and (max-width: 996px) {
+    .room_area_title_pic{
+        right: 110px;
+        top: 5px;    
+    }
+}
+.room_area_title_pic img{
+    position: absolute;
+    width: 10%;
+    left: 590px;
+    bottom: 62px;
+}
 .room_area_pic img{
     max-width: 100%;
     height: auto;

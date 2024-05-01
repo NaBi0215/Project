@@ -41,25 +41,35 @@
         </div>
         <div class="QA_cards">
             <div class="QA_card">
-                <h3>Q 觀葉植物百百種,我該從哪一種開始入手呢？</h3>
-                <h4>A 首先可以先參考植物的價位,外觀,照護難易度來尋找喔。像是虎尾蘭,蔓綠絨,粗肋草都是可以考慮的選擇</h4>
+                <button type="button" class="collapsible">Q 觀葉植物百百種,我該從哪一種開始入手呢？</button>
+                <div class="QA_card_content">
+                    <p>A 首先可以先參考植物的價位,外觀,照護難易度來尋找喔。像是虎尾蘭,蔓綠絨,粗肋草都是可以考慮的選擇</p>
+                </div>
             </div>
             <div class="QA_card">
-                <h3>Q 買花的時候老闆總說需要半日照,濕度高的環境。我要怎麼評斷自己家裡適不適合呢？</h3>
-                <h4>A 好好分析自己家中環境以及了解植物特性。不僅可以提高自己家居的生活品質,也可以找到最適合自己的植物喔。</h4>
+                <button type="button" class="collapsible">Q 買花的時候老闆總說需要半日照,濕度高的環境。我要怎麼評斷自己家裡適不適合呢？</button>
+                <div class="QA_card_content">
+                    <p>A 好好分析自己家中環境以及了解植物特性。不僅可以提高自己家居的生活品質,也可以找到最適合自己的植物喔。</p>
+                </div>
             </div>
             <div class="QA_card">
-                <h3>Q 介質是什麼？如何調配?哪一種才會最符合植物的需求呢?</h3>
-                <h4>A 其實很簡單。只要掌握好12種基礎介質,再好好分析珍愛的植物用水及日照需求,就可以是最適合的比例囉。</h4>
+                <button type="button" class="collapsible">Q 介質是什麼？如何調配?哪一種才會最符合植物的需求呢?</button>
+                <div class="QA_card_content">
+                    <p>A 其實很簡單。只要掌握好12種基礎介質,再好好分析珍愛的植物用水及日照需求,就可以是最適合的比例囉。</p>
+                </div>
             </div>
             <div class="QA_card">
-                <h3>Q 我家的植物剛入手時又茂密又漂亮,為什麼養久了就開始分散方向徒長,變得醜醜的？</h3>
-                <h4>A 植物也是需要花時間整理的。善用扦插,分株,修剪等實用的技巧,不但能讓植物更美觀,也更健康喔。</h4>
+                <button type="button" class="collapsible">Q 我家的植物剛入手時又茂密又漂亮,為什麼養久了就開始分散方向徒長,變得醜醜的？</button>
+                <div class="QA_card_content">
+                    <p>A 植物也是需要花時間整理的。善用扦插,分株,修剪等實用的技巧,不但能讓植物更美觀,也更健康喔。</p>
+                </div>
             </div>
             <div class="QA_card">
-                <h3>Q 為什麼只要季節到了夏季,我的植物總是容易曬傷,枯黃,但是到了冬天卻又垂頭喪氣？
-                </h3>
-                <h4>A 隨時觀察天氣的變化,適時地遮光,補光,保溫,加濕等措施都是很重要的喔。</h4>
+                <button type="button" class="collapsible">Q 為什麼只要季節到了夏季,我的植物總是容易曬傷,枯黃,但是到了冬天卻又垂頭喪氣？
+                </button>
+                <div class="QA_card_content">
+                    <p>A 隨時觀察天氣的變化,適時地遮光,補光,保溫,加濕等措施都是很重要的喔。</p>
+                </div>
             </div>
         </div>
         <div class="footer">
@@ -93,5 +103,21 @@
                 </div>
             </div>
         </div>
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.display === "block") {
+                        content.style.display = "none";
+                    } else {
+                        content.style.display = "block";
+                    }
+                });
+            }
+            </script>            
     </body>
 </html>
