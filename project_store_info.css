@@ -178,6 +178,11 @@ iframe {
     right: 0px;
     top: 10PX;
 }
+@media screen and (max-width: 768px) {
+    .plant_pic{
+        display: none;
+    }
+}
 .footer{
     position: relative;
 }

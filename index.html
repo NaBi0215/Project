@@ -9,9 +9,15 @@
     <!-- 引入 jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- 引入 Owl Carousel CSS -->
-    <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
+    <!-- <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.css"> -->
+    <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="/bower_components/owl.carousel/dist/assets/owl.carousel.min.css" />
     <!-- 引入 Owl Carousel JS -->
-    <script src="OwlCarousel2-2.3.4/dist/owl.carousel.js"></script>
+    <!-- <script src="OwlCarousel2-2.3.4/dist/owl.carousel.js"></script> -->
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="./project_index.css">
     <script>
         $(function () {
@@ -66,10 +72,10 @@
         <div class="item"><img src="./img/banner_03.png" alt=""></div>
         
     </div>
-    <div class="banner_switch">
+    <!-- <div class="banner_switch">
         <button class="play">Play</button>
         <button class="stop">Stop</button>
-    </div>
+    </div> -->
     <div class="title_area">
         <img src="./img/2357052-2 1.png" alt="">
         <h2 class="fadein">將自然帶回家,添上屬於你的綠色幸福</h2>
@@ -95,7 +101,9 @@
             </div>
             <div class="popular_pic">
                 <div class="popular_pic_bg"></div>
-                <img src="./img/Group 51.png" alt="">
+                <a href="http://127.0.0.1:5501/project_products.html">
+                    <img src="./img/popular_plant.jpg" alt="">
+                </a>
             </div>
         </div>
     </div>
@@ -180,7 +188,7 @@
         </div>
     </div>
 <!-- Owl Carousel JS -->
-<!-- <script>
+<script>
     var owl = $('.owl-carousel');
 
     owl.owlCarousel({
@@ -192,11 +200,11 @@
         autoplayHoverPause: true
     });
     $('.play').on('click', () => {
-        owl.trigger('play.owl.autoplay', [2000])
+        owl.trigger('play.owl.autoplay', [3000])
     })
     $('.stop').on('click', function() {
         owl.trigger('stop.owl.autoplay')
     })
-</script> -->
+</script>
 </body>
 </html>
