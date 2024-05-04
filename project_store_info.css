@@ -167,6 +167,16 @@
 .googlemap{
     position: relative;
 }
+.here_pic{ 
+    position: absolute;
+    top: 100px;
+    left: 565px
+}
+@media screen and (max-width: 768px) {
+    .here_pic{ 
+        display: none;
+    }
+}
 iframe {
     margin: 50px 0px;
     margin-left: 20%;
@@ -463,7 +473,7 @@ iframe {
     color: rgba(255, 255, 255, 0.72);
     font-size: clamp(10px,1.302vw, 10px);
     letter-spacing: 3px;
-    line-height: 25px;
+    line-height: 20px;
     position: absolute;
     left: 90px;
     top: 165px;
@@ -471,9 +481,9 @@ iframe {
 }
 .footer_txt_card_2{
     color: rgba(255, 255, 255, 0.72);
-    font-size: clamp(14px,1.822vw, 14px);
+    font-size: clamp(10px,1.302vw, 10px);
     letter-spacing: 3px;
-    line-height: 25px;
+    line-height: 20px;
     position: absolute;
     left: 610px;
     top: 165px;
@@ -483,7 +493,7 @@ iframe {
     color: rgba(255, 255, 255, 0.72);
     font-size: clamp(12px,1.562vw, 12px);
     letter-spacing: 3px;
-    line-height: 25px;
+    line-height: 20px;
     position: absolute;
     right: 80px;
     top: 165px;

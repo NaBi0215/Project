@@ -180,16 +180,56 @@
     margin: 50px 0px;
     position: relative;
 }
+.plant_pic{
+    position: absolute;
+    top: -60px;
+    left: 150px;
+}
 .ig_pic_area_1{
-    display: flex;
-    place-content: center;
-    gap: 20px;
     padding-bottom: 30px;
+    width: 400px;
+    height: 100px;
+    display: flex;
+    gap: 0px;
+    margin-top: 150px;
+    padding-left: 450px;
+}
+.ig_pic_area_1 a{
+    width: 0px;
+    /* background-color: orange; */
+    font-size: 40px;
+    color: #666;
+    flex-grow: 1;
+    overflow: hidden;
+    transition: 1s;
+}
+.ig_pic_area_1 img{
+    height: 100%;
+}
+.ig_pic_area_1 a:hover{
+    flex-grow: 3;
 }
 .ig_pic_area_2{
+    padding-bottom: 30px;
+    width: 400px;
+    height: 100px;
     display: flex;
-    place-content: center;
-    gap: 20px;
+    gap: 0px;
+    padding-left: 450px;
+}
+.ig_pic_area_2 a{
+    width: 0px;
+    font-size: 40px;
+    color: #666;
+    flex-grow: 1;
+    overflow: hidden;
+    transition: 1s;
+}
+.ig_pic_area_2 img{
+    height: 100%;
+}
+.ig_pic_area_2 a:hover{
+    flex-grow: 3;
 }
 .ig_pic_area a{
     opacity: .5;
@@ -199,27 +239,6 @@
 }
 @media screen and (max-width: 768px) {
     .ig_pic_area_1{
-        width: 400px;
-        height: 100px;
-        /* border: 1px solid red; */
-        display: flex;
-        gap: 0px;
-        margin-left: 35px;
-    }
-    .ig_pic_area_1 a{
-        width: 0px;
-        /* background-color: orange; */
-        font-size: 40px;
-        color: #666;
-        flex-grow: 1;
-        overflow: hidden;
-        transition: 1s;
-    }
-    .ig_pic_area_1 img{
-        height: 100%;
-    }
-    .ig_pic_area_1 a:hover{
-        flex-grow: 3;
     }
     .ig_pic_area_2{
         display: none;
@@ -350,7 +369,7 @@
 }
 .footer_txt_card_1{
     color: rgba(255, 255, 255, 0.72);
-    font-size: 10px;
+    font-size: clamp(10px,1.302vw, 10px);
     letter-spacing: 3px;
     line-height: 25px;
     position: absolute;
@@ -360,7 +379,7 @@
 }
 .footer_txt_card_2{
     color: rgba(255, 255, 255, 0.72);
-    font-size: 12px;
+    font-size: clamp(12px,1.562vw, 12px);
     letter-spacing: 3px;
     line-height: 25px;
     position: absolute;
@@ -370,7 +389,7 @@
 }
 .footer_txt_card_3{
     color: rgba(255, 255, 255, 0.72);
-    font-size: 12px;
+    font-size: clamp(12px,1.562vw, 12px);
     letter-spacing: 3px;
     line-height: 25px;
     position: absolute;

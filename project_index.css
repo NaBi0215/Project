@@ -108,10 +108,28 @@
 	background-color: #666;
 }
 
+@media screen and (max-width: 768px) {
+    #sliderBoard{
+        display: none;
+    }
+}
+.banner_pic{
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    .banner_pic{
+        display: block;
+    }
+}
 .title_area{
     text-align: center;
     position: relative;
     /* z-index: 1; */
+}
+@media screen and (max-width: 768px) {
+    .title_area{
+        display: none;
+    }
 }
 .title_area img{
     position: absolute;
@@ -169,8 +187,7 @@
 }
 @media screen and (max-width: 996px) {
     .popular_title_pic{
-        right: 110px;
-        top: 5px;    
+        display: none;
     }
 }
 .popular_title_pic.fade-in{
@@ -194,6 +211,12 @@
     border-radius: 80px;
     margin: 50px 80px;
     order: 1;
+}
+@media screen and (max-width: 768px) {
+    .popular_explain_txt{
+        width: 80%;
+        padding: 0px 5px;
+    }
 }
 .popular_explain_txt h4{
     font-size: clamp(22px, 2.864vw, 22px);
@@ -298,8 +321,7 @@
         display: none;
     }
     .about_txt{
-        padding: 0px 0px;
-        padding-left: 10px;
+        padding: 0px 15px;
     }
 }
 .circle1{
@@ -493,7 +515,7 @@
     color: rgba(255, 255, 255, 0.72);
     font-size: clamp(10px,1.302vw, 10px);
     letter-spacing: 3px;
-    line-height: 25px;
+    line-height: 20px;
     position: absolute;
     left: 90px;
     top: 165px;
@@ -520,48 +542,15 @@
     z-index: 5;
 }
 @media screen and (max-width: 768px) {
-    .footer_txt_card_2{
-        display: none;
-    }
-    .footer_txt_card_3{
-        display: none;
-    }
-    .triangle_1{
-        display: none;
-    }
-    .triangle_2{
-        display: none;
-    }
-    .footer_circle_1{
-        display: none;
-    }
-    .footer_circle_2{
-        display: none;
-    }
-    .footer_circle_3{
-        display: none;
-    }
-    .footer_circle_4{
-        display: none;
-    }
-    .footer_circle_5{
-        display: none;
-    }
-    .footer_circle_6{
-        display: none;
-    }
-    .footer_circle_7{
-        display: none;
-    }
-    .footer_circle_8{
-        display: none;
-    }
-    .footer_circle_9{
+    .close{
         display: none;
     }
 }
 @media screen and (max-width: 996px) {
     .footer_txt_card_2{
+        display: none;
+    }
+    .footer_txt_card_3{
         display: none;
     }
 }
