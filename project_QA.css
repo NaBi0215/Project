@@ -39,6 +39,11 @@
     position: relative;
     z-index: 10;
 }
+@media screen and (max-width: 768px) {
+    .main-header .main-nav{
+        width: 100%;
+    }
+}
 .main-header .main-nav a{
     display: block;
     padding: 32px 80px;
@@ -59,21 +64,53 @@
 .logo img{
     width: 50%;
 }
-.QA_area{
-    position: relative;
-    z-index: -1;
-}
 .QA_area h2{
-    font-size: 28px;
+    font-size: clamp(28px, 3.6458vw, 28px);
     font-weight: bold;
     text-align: center;
     padding-top: 150px;
     padding-bottom: 50px;
+    position: relative;
 }
-.QA_area_pic{
+.plant_pic{
     position: absolute;
-    right: 300px;
-    top: 62px;
+    right: 240px;
+    bottom:30px;
+}
+@media screen and (max-width: 768px) {
+    .plant_pic{
+        display: none;
+}
+}
+.QA_area_title_pic{
+    position: relative;
+    opacity: 0;
+    animation: fadeIn 3s ease forwards;
+}
+@keyframes fadeIn {
+    from {
+      opacity: 0; /* 初始狀態，完全透明 */
+    }
+    to {
+      opacity: 1; /* 結束狀態，完全不透明 */
+    }
+}
+@media screen and (max-width: 768px) {
+    .QA_area_title_pic{
+        display: none;
+    }
+}
+@media screen and (max-width: 996px) {
+    .QA_area_title_pic{
+        right: 210px;
+        bottom: 10px;    
+    }
+}
+.QA_area_title_pic img{
+    position: absolute;
+    width: 10%;
+    left: 600px;
+    bottom: 12px;
 }
 .QA_area_pic img:nth-child(4){
     position: absolute;
@@ -81,28 +118,48 @@
     bottom: 110px;
 }
 .QA_cards{
-    margin-left: 200px;
-    margin-bottom: 50px;
+    margin-left: 10%;
+    margin-bottom: 5%;
 }
 .QA_card{
-    padding: 20px 0px;
+    padding: 30px 0px;
 }
-.QA_card button{
+.collapsible{
     border: 0;
     outline: 0;
     background-color: transparent;
-    font-size: 18px;
+    font-size: clamp(18px, 2.343vw, 18px);
     font-weight: bold;
     color: #6DB861;
     letter-spacing: 3px;
+    cursor: pointer;
 }
-.QA_card p{
-    font-size: 16px;
+.QA_card_content{
+    font-size: clamp(16px,2.083vw, 16px);
+    color: rgb(116, 116, 116);
     padding-top: 35px;
     letter-spacing: 2px;
-    text-decoration: underline rgba(150, 150, 150, 0.651);
+    /* text-decoration: underline rgba(150, 150, 150, 0.651); */
+    /* text-underline-offset: .5em;
+    text-decoration-thickness: 2px; */
+}
+.active, .collapsible:hover{
+    text-decoration: underline #6DB861;
     text-underline-offset: .5em;
     text-decoration-thickness: 2px;
+}
+@media screen and (max-width: 768px) {
+    .active, .collapsible:hover{
+        text-decoration: underline transparent;
+    }
+    .QA_card_content{
+        letter-spacing: .2em;
+        line-height: 1.5em;
+    }
+}
+.QA_card_content{
+    display: none;
+    overflow: hidden;
 }
 .footer{
     position: relative;
@@ -229,7 +286,7 @@
 }
 .footer_txt_card_1{
     color: rgba(255, 255, 255, 0.72);
-    font-size: 10px;
+    font-size: clamp(10px,1.302vw, 10px);
     letter-spacing: 3px;
     line-height: 25px;
     position: absolute;
@@ -239,7 +296,7 @@
 }
 .footer_txt_card_2{
     color: rgba(255, 255, 255, 0.72);
-    font-size: 12px;
+    font-size: clamp(12px,1.562vw, 12px);
     letter-spacing: 3px;
     line-height: 25px;
     position: absolute;
@@ -249,11 +306,52 @@
 }
 .footer_txt_card_3{
     color: rgba(255, 255, 255, 0.72);
-    font-size: 12px;
+    font-size: clamp(12px,1.562vw, 12px);
     letter-spacing: 3px;
     line-height: 25px;
     position: absolute;
     right: 80px;
     top: 165px;
     z-index: 5;
+}
+@media screen and (max-width: 768px) {
+    .footer_txt_card_2{
+        display: none;
+    }
+    .footer_txt_card_3{
+        display: none;
+    }
+    .triangle_1{
+        display: none;
+    }
+    .triangle_2{
+        display: none;
+    }
+    .footer_circle_1{
+        display: none;
+    }
+    .footer_circle_2{
+        display: none;
+    }
+    .footer_circle_3{
+        display: none;
+    }
+    .footer_circle_4{
+        display: none;
+    }
+    .footer_circle_5{
+        display: none;
+    }
+    .footer_circle_6{
+        display: none;
+    }
+    .footer_circle_7{
+        display: none;
+    }
+    .footer_circle_8{
+        display: none;
+    }
+    .footer_circle_9{
+        display: none;
+    }
 }

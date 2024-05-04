@@ -32,14 +32,14 @@
         </nav>
     </header>
     <div class="QA_area">
-        <h2>植友QA</h2>
-        <div class="QA_area_pic">
-            <img src="./img/QA_01.png" alt="">
-            <img src="./img/QA_02.png" alt="">
-            <img src="./img/QA_03.png" alt="">
-            <img src="./img/QA_04.png" alt="">
-        </div>
-        <div class="QA_cards">
+            <h2>植友QA
+                <div class="plant_pic">
+                    <lottie-player src="https://lottie.host/75c8930b-f8ec-4391-b0e5-a6e476561238/LGls2ZI1FA.json" background="##FFFFFF" speed="1" style="width: 200px; height: 200px" loop autoplay direction="1" mode="normal"></lottie-player>        
+            </h2>
+            <div class="QA_area_title_pic">
+                <img src="./img/1438023.png" alt="">
+            </div>
+'        <div class="QA_cards">
             <div class="QA_card">
                 <button type="button" class="collapsible">Q 觀葉植物百百種,我該從哪一種開始入手呢？</button>
                 <div class="QA_card_content">
@@ -72,52 +72,54 @@
                 </div>
             </div>
         </div>
-        <div class="footer">
-            <div class="triangle_1"></div>
-            <div class="rectangle"></div>
-            <div class="triangle_2"></div>
-            <div class="footer_circle_1"></div>
-            <div class="footer_circle_2"></div>
-            <div class="footer_circle_3"></div>
-            <div class="footer_circle_4"></div>
-            <div class="footer_circle_5"></div>
-            <div class="footer_circle_6"></div>
-            <div class="footer_circle_7"></div>
-            <div class="footer_circle_8"></div>
-            <div class="footer_circle_9"></div>
-            <div class="footer_txt">
-                <div class="footer_txt_card_1">
-                    <p>Copyright © 2024 植選Choice. All rights reserved.</p>
-                    <p>本網站僅供學習使用 無任何商業用途<br>
-                        This website is for educational use only.</p>
-                </div>
-                <div class="footer_txt_card_2">
-                    <p>植選Choice<br>
-                        台灣桃園市桃園區愛二街吉林路236號<br>
-                        (03)438-1234</p>
-                </div>
-                <div class="footer_txt_card_3">
-                    <p>Open 每週一 二 三 六 日 10:30-20:30<br>
-                        Close 每週四 五<br> 
-                        (詳細情形請參照ig公告)</p>
-                </div>
+    </div>
+    <div class="footer">
+        <div class="triangle_1"></div>
+        <div class="rectangle"></div>
+        <div class="triangle_2"></div>
+        <div class="footer_circle_1"></div>
+        <div class="footer_circle_2"></div>
+        <div class="footer_circle_3"></div>
+        <div class="footer_circle_4"></div>
+        <div class="footer_circle_5"></div>
+        <div class="footer_circle_6"></div>
+        <div class="footer_circle_7"></div>
+        <div class="footer_circle_8"></div>
+        <div class="footer_circle_9"></div>
+        <div class="footer_txt">
+            <div class="footer_txt_card_1">
+                <p>Copyright © 2024 植選Choice. All rights reserved.</p>
+                <p>本網站僅供學習使用 無任何商業用途<br>
+                    This website is for educational use only.</p>
+            </div>
+            <div class="footer_txt_card_2">
+                <p>植選Choice<br>
+                    台灣桃園市桃園區愛二街吉林路236號<br>
+                    (03)438-1234</p>
+            </div>
+            <div class="footer_txt_card_3">
+                <p>Open 每週一 二 三 六 日 10:30-20:30<br>
+                    Close 每週四 五<br> 
+                    (詳細情形請參照ig公告)</p>
             </div>
         </div>
-        <script>
-            var coll = document.getElementsByClassName("collapsible");
-            var i;
-            
-            for (i = 0; i < coll.length; i++) {
-                coll[i].addEventListener("click", function() {
-                    this.classList.toggle("active");
-                    var content = this.nextElementSibling;
-                    if (content.style.display === "block") {
-                        content.style.display = "none";
-                    } else {
-                        content.style.display = "block";
-                    }
-                });
-            }
-            </script>            
-    </body>
+    </div>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>       
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</body>
 </html>

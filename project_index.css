@@ -21,6 +21,7 @@
     top: 0;
     right: 0;
     z-index: 20;
+    cursor: pointer;
 }
 .main-header .hb span{
     width: 80%;
@@ -29,6 +30,8 @@
 }
 #menu-switch:checked ~ .main-header .hb{
     background-color:#A37C66;
+    cursor: pointer;
+
 }
 .main-header .main-nav{
     display: none;
@@ -64,62 +67,47 @@
 .logo img{
     width: 50%;
 }
-.owl-carousel .item{
-    display: block;
-    margin: 0 auto;
-    height: auto;
+#content image{
     width: 100%;
+    height: 500px;
 }
-.banner_switch{
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-}
-@media screen and (max-width: 768px) {
-    .banner_switch{
-        display: none;
-    }
-}
-.banner_switch .play{
-    background: none;
-    border: none;
-    outline: none;
-    color: transparent; /*消除原預設*/
+#sliderBoard{ 
+	width: 60%;
+	height: 550px;
+	margin: auto 250px;
+    position: relative;
 
-    border-color: #4D9819;
-    color: #ffffff;
-    font-size: clamp(16px,2.083vw, 16px);
-    background-color: #4D9819;
-    width: 4%;
-    height: auto;
-    border-radius: 50px;
-    transition: transform .8s ease;
+	overflow: hidden;
 }
-.banner_switch .play:hover{
-    transform: scale(1.1);
-    background-color: #2b530f;
-    color: #ffffff48;
+#content{
+	position: relative;
 }
-.banner_switch .stop{
-    background: none;
-    border: none;
-    outline: none;
-    color: transparent; /*消除原預設*/
+#content li{
+	float: left;
+}
 
-    border-color: #4D9819;
-    color: #ffffff;
-    font-size: clamp(16px,2.083vw, 16px);
-    background-color: #4D9819;
-    width: 4%;
-    height: auto;
-    border-radius: 50px;
-    transition: transform .8s ease;
+/*circle button*/
+#contentButton{
+	/* border: 1px solid red; */
+	height: 50px;
+	width: 100%;
+	text-align: center;
+    position: absolute;
+    top: 510px
 }
-.banner_switch .stop:hover{
-    transform: scale(1.1);
-    background-color: #2b530f;
-    color: #ffffff48;
+#contentButton li{
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	background-color: #ccc;
+	margin: 5px;
+
+	display: inline-block;
 }
+#contentButton li.clicked{
+	background-color: #666;
+}
+
 .title_area{
     text-align: center;
     position: relative;
@@ -143,8 +131,8 @@
     text-decoration: underline rgb(255, 235, 204);
     text-underline-offset: -.2em;
     text-decoration-thickness: 12px;
-    margin-top: 100px;
-    margin-bottom: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .title_area h3{
     font-size: clamp(28px, 3.6458vw, 28px);
@@ -160,7 +148,7 @@
     font-weight: bold;
     letter-spacing: 5px;
     line-height: 35px;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 .popular_title h3{
     font-size: clamp(28px, 3.6458vw, 28px);
@@ -202,11 +190,9 @@
 .popular_explain_txt{
     background-color: rgba(255, 235, 204, 0.46);
     height: auto;
-    width: 55%;
+    width: 50%;
     border-radius: 80px;
-    padding: 0px 20px;
-    padding-bottom: 25x;
-    margin: 40px;
+    margin: 50px 80px;
     order: 1;
 }
 .popular_explain_txt h4{
@@ -303,7 +289,7 @@
 .about_txt p{
     font-size: clamp(18px, 2.343vw, 18px);
     line-height: 2em;
-    letter-spacing: .6em;
+    letter-spacing: .5em;
     padding-top: 20px;
     text-align: left;
 }
@@ -318,15 +304,15 @@
 }
 .circle1{
     position: absolute;
-    top: 5%;
-    left: 49.8%;
+    top: 3%;
+    left: 50%;
     z-index: -1;
     transform: translate(-50%, -50%);
 }
 .circle2{
     position: absolute;
-    top: 45%;
-    right: 12%;
+    top: 44%;
+    right: 13%;
     z-index: -1;
     transform: translate(-50%, -50%);
 }
@@ -359,7 +345,7 @@
 .about_explain_txt p{
     font-size: clamp(16px,2.083vw, 16px);
     padding: 0px 30px;
-    letter-spacing: .5em ;
+    letter-spacing: .4em ;
     line-height: 2.2em;
     padding-top: 52px;
     width: 80%;
@@ -515,7 +501,7 @@
 }
 .footer_txt_card_2{
     color: rgba(255, 255, 255, 0.72);
-    font-size: clamp(14px,1.822vw, 14px);
+    font-size: clamp(12px,1.562vw, 12px);
     letter-spacing: 3px;
     line-height: 25px;
     position: absolute;

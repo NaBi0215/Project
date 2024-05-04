@@ -5,20 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./cssreset.css">
+    <link rel="stylesheet" href="./project_index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <!-- 引入 jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- 引入 Owl Carousel CSS -->
-    <!-- <link rel="stylesheet" href="OwlCarousel2-2.3.4/dist/assets/owl.carousel.css"> -->
-    <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
-    <link rel="stylesheet" href="/bower_components/owl.carousel/dist/assets/owl.carousel.min.css" />
-    <!-- 引入 Owl Carousel JS -->
-    <!-- <script src="OwlCarousel2-2.3.4/dist/owl.carousel.js"></script> -->
-    <script src="/node_modules/jquery/dist/jquery.js"></script>
-    <script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
-    <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <script src="/bower_components/owl.carousel/dist/owl.carousel.min.js"></script>
-    <link rel="stylesheet" href="./project_index.css">
+    <script src="./project_index.js"></script>
     <script>
         $(function () {
             $('.fadein').hide().fadeIn(3000);
@@ -39,7 +30,6 @@
             });
         });
     </script>
-    
 
 </head>
 <body>
@@ -66,16 +56,25 @@
             <a href="./project_contact.html">聯絡我們</a>
         </nav>
     </header>
-    <div class="owl-carousel">
-        <div class="item"><img src="./img/banner_01.png" alt=""></div>
-        <div class="item"><img src="./img/banner_02.png" alt=""></div>
-        <div class="item"><img src="./img/banner_03.png" alt=""></div>
-        
+    <div id="sliderBoard">
+        <ul id="content">
+            <li><img src="./img/livingroom_01.jpg" class="image"></li>
+            <li><img src="./img/livingroom_02.jpg" class="image"></li>
+            <li><img src="./img/livingroom_03.jpg" class="image"></li>
+            <li><img src="./img/livingroom_04.jpg" class="image"></li>
+            <li><img src="./img/livingroom_05.jpg" class="image"></li>
+        </ul>
+        <ul id="contentButton">
+            <!-- <li class="clicked"></li>
+			<li ></li>
+			<li ></li>
+			<li ></li>
+			<li ></li>
+			<li ></li>
+			<li ></li>
+			<li ></li> -->
+        </ul>
     </div>
-    <!-- <div class="banner_switch">
-        <button class="play">Play</button>
-        <button class="stop">Stop</button>
-    </div> -->
     <div class="title_area">
         <img src="./img/2357052-2 1.png" alt="">
         <h2 class="fadein">將自然帶回家,添上屬於你的綠色幸福</h2>
@@ -188,7 +187,7 @@
         </div>
     </div>
 <!-- Owl Carousel JS -->
-<script>
+<!-- <script>
     var owl = $('.owl-carousel');
 
     owl.owlCarousel({
@@ -205,6 +204,6 @@
     $('.stop').on('click', function() {
         owl.trigger('stop.owl.autoplay')
     })
-</script>
+</script> -->
 </body>
 </html>
