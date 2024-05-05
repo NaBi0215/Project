@@ -6,10 +6,20 @@
     <title>Document</title>
     <link rel="stylesheet" href="./cssreset.css">
     <link rel="stylesheet" href="./project_index.css">
+    <!-- icon-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <!-- 引入 jQuery -->
+    <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./project_index.js"></script>
+    <script>
+        function openNav(){
+            document.getElementById("mySidepanel").style.width = "500px";
+        }
+        function closeNav(){
+            document.getElementById("mySidepanel").style.width = "0";
+        }
+    </script>
+
     <script>
         $(function () {
             $('.fadein').hide().fadeIn(3000);
@@ -33,29 +43,29 @@
 
 </head>
 <body>
-    <input type="checkbox" id="menu-switch">
-        <header class="main-header">
-        <a href="./index.html">
-            <div class="logo">
+    <div class="hender">
+        <div class="logo">
+            <a href="http://127.0.0.1:5501/index.html">
                 <img src="./img/mylogo.png" alt="">
-            </div>
-        </a>        
-            <a href="#"></a>
+            </a>
         </div>
-        <label for="menu-switch" class="hb">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
-        <nav class="main-nav">
-            <a href="./project_news.html">最新消息</a>
-            <a href="./project_products.html">商品列表</a>
-            <a href="./project_livingroom.html">參考擺設</a>
-            <a href="./project_store_info.html">門市資訊</a>
-            <a href="./project_QA.html">植友QA</a>
-            <a href="./project_contact.html">聯絡我們</a>
-        </nav>
-    </header>
+        <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+            <i class="fa-solid fa-xmark" style="color: #ffffff7a;"></i>
+            </a>
+            <a href="http://127.0.0.1:5501/project_news.html">最新消息</a>
+            <a href="http://127.0.0.1:5501/project_products.html">商品列表</a>
+            <a href="http://127.0.0.1:5501/project_livingroom.html">參考擺設</a>
+            <a href="http://127.0.0.1:5501/project_store_info.html">門市資訊</a>
+            <a href="http://127.0.0.1:5501/project_QA.html">植友QA</a>
+            <a href="http://127.0.0.1:5501/project_contact.html">聯絡我們</a>
+        </div>
+        <button class="openbtn" onclick="openNav()">
+            <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+        </button>
+    </div>
+
+
     <div id="sliderBoard">
         <ul id="content">
             <li><img src="./img/livingroom_01.jpg" class="image"></li>
@@ -74,10 +84,13 @@
 			<li ></li>
 			<li ></li> -->
         </ul>
+    </div>
+
     <div class="banner_pic">
-        <img src="../project/img/livingroom_04.jpg" alt="">
-    </div>
-    </div>
+        <div id="banner_txt">歡迎來到植選Choice</div>
+        <img src="./img/livingroom_mobile_01.jpg" alt="">
+    </div>    
+
     <div class="title_area">
         <img src="./img/2357052-2 1.png" alt="">
         <h2 class="fadein">將自然帶回家,添上屬於你的綠色幸福</h2>
@@ -191,24 +204,5 @@
             </div>
         </div>
     </div>
-<!-- Owl Carousel JS -->
-<!-- <script>
-    var owl = $('.owl-carousel');
-
-    owl.owlCarousel({
-        items: 2,
-        loop: true,
-        margin: 10,
-        autoplay: true,
-        autoplayTimeout: 2000,
-        autoplayHoverPause: true
-    });
-    $('.play').on('click', () => {
-        owl.trigger('play.owl.autoplay', [3000])
-    })
-    $('.stop').on('click', function() {
-        owl.trigger('stop.owl.autoplay')
-    })
-</script> -->
 </body>
 </html>

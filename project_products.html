@@ -6,33 +6,42 @@
     <title>Document</title>
     <link rel="stylesheet" href="./cssreset.css">
     <link rel="stylesheet" href="./project_products.css">
-    <!-- <link href="/./fontawesome-free-6.5.2-desktop/" rel="stylesheet"> load all styles -->
+    <!-- icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" /></head> -->
+    <script>
+        function openNav(){
+            document.getElementById("mySidepanel").style.width = "500px";
+        }
+        function closeNav(){
+            document.getElementById("mySidepanel").style.width = "0";
+        }
+    </script>
 
-    <body>
-    <input type="checkbox" id="menu-switch">
-    <header class="main-header">
-        <a href="./index.html">
-            <div class="logo">
+</head>
+<body>
+    <div class="hender">
+        <div class="logo">
+            <a href="http://127.0.0.1:5501/index.html">
                 <img src="./img/mylogo.png" alt="">
-            </div>
-        </a>
-            <a href="#"></a>
+            </a>
         </div>
-        <label for="menu-switch" class="hb">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
-        <nav class="main-nav">
-            <a href="./project_news.html">最新消息</a>
-            <a href="./project_products.html">商品列表</a>
-            <a href="./project_livingroom.html">參考擺設</a>
-            <a href="./project_store_info.html">門市資訊</a>
-            <a href="./project_QA.html">植友QA</a>
-            <a href="./project_contact.html">聯絡我們</a>
-        </nav>
-    </header>
+        <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+            <i class="fa-solid fa-xmark" style="color: #ffffff7a;"></i>
+            </a>
+            <a href="http://127.0.0.1:5501/project_news.html">最新消息</a>
+            <a href="http://127.0.0.1:5501/project_products.html">商品列表</a>
+            <a href="http://127.0.0.1:5501/project_livingroom.html">參考擺設</a>
+            <a href="http://127.0.0.1:5501/project_store_info.html">門市資訊</a>
+            <a href="http://127.0.0.1:5501/project_QA.html">植友QA</a>
+            <a href="http://127.0.0.1:5501/project_contact.html">聯絡我們</a>
+        </div>
+        <button class="openbtn" onclick="openNav()">
+            <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+        </button>
+    </div>
+    
     <div class="products_area">
         <h2>商品列表</h2>
             <div class="products_area_title_pic">
@@ -41,35 +50,45 @@
         <h3>植栽</h3>
         <div class="products_cards_area products_show">
                 <div class="products_card products_show">
-                    <img src="./img/product_01.jpg" srcset="./img/product_01.jpg 3150w" alt="">
+                    <a href="#">
+                        <img src="./img/product_01.jpg" srcset="./img/product_01.jpg 3150w" alt="">
+                    </a>
                     <a href="#">
                         <p>印度榕</p>
                         <p>Ficus elastica</p>
                     </a>
                 </div>
             <div class="products_card products_show">
-                <img src="./img/product_02.jpg" srcset="./img/product_02.jpg 3150w" alt="">
+                <a href="">
+                    <img src="./img/product_02.jpg" srcset="./img/product_02.jpg 3150w" alt="">
+                </a>
                 <a href="#">
                     <p>印度榕</p>
                     <p>Ficus elastica</p>
                 </a>
             </div>
             <div class="products_card products_show">
-                <img src="./img/product_03.jpg" srcset="./img/product_03.jpg 3150w" alt="">
+                <a href="">
+                    <img src="./img/product_03.jpg" srcset="./img/product_03.jpg 3150w" alt="">
+                </a>
                 <a href="#">
                     <p>印度榕</p>
                     <p>Ficus elastica</p>
                 </a>
             </div>
             <div class="products_card products_show">
-                <img src="./img/product_04.jpg" srcset="./img/product_04.jpg 3150w" alt="">
+                <a href="">
+                    <img src="./img/product_04.jpg" srcset="./img/product_04.jpg 3150w" alt="">
+                </a>
                 <a href="#">
                     <p>彩葉芋 嘻哈果汁</p>
                     <p>Caladium</p>
                 </a>
             </div>
             <div class="products_card products_show">
-                <img src="./img/product_05.jpg" srcset="./img/product_05.jpg 3150w" alt="">
+                <a href="">
+                    <img src="./img/product_05.jpg" srcset="./img/product_05.jpg 3150w" alt="">
+                </a>
                 <a href="#">
                     <p>彩葉芋</p>
                     <p>Caladium</p>
@@ -78,35 +97,45 @@
         </div>
         <div class="products_cards_area">
             <div class="products_card">
-                <img src="./img/product_06.jpg" srcset="./img/product_06.jpg 3150w" alt="">
+                <a href="">
+                    <img src="./img/product_06.jpg" srcset="./img/product_06.jpg 3150w" alt="">
+                </a>
                 <a href="#">
                     <p>圓葉山烏龜</p>
                     <p>stephania erecta</p>
                 </a>
             </div>
             <div class="products_card">
-                <img src="./img/product_07.jpg" srcset="./img/product_07.jpg 3150w" alt="">
+                <a href="">
+                    <img src="./img/product_07.jpg" srcset="./img/product_07.jpg 3150w" alt="">
+                </a>
                 <a href="#">
                     <p>圓葉山烏龜</p>
                     <p>stephania erecta</p>
                 </a>
             </div>
             <div class="products_card">
-                <img src="./img/product_08.jpg" srcset="./img/product_08.jpg 3150w" alt="">
+                <a href="">
+                    <img src="./img/product_08.jpg" srcset="./img/product_08.jpg 3150w" alt="">
+                </a>
                 <a href="#">
                     <p>虎尾蘭</p>
                     <p>Snake Plant</p>
                 </a>
             </div>
             <div class="products_card">
-                <img src="./img/product_09.jpg" srcset="./img/product_09.jpg 3150w" alt="">
+                <a href="">
+                    <img src="./img/product_09.jpg" srcset="./img/product_09.jpg 3150w" alt="">
+                </a>
                 <a href="#">
                     <p>旅人蕉</p>
                     <p>Ravenala<br>madagascariensis</p>
                 </a>
             </div>
             <div class="products_card">
-                <img src="./img/product_10.jpg" srcset="./img/product_10.jpg 3150w" alt="">
+                <a href="">
+                    <img src="./img/product_10.jpg" srcset="./img/product_10.jpg 3150w" alt="">
+                </a>
                 <a href="#">
                     <p>粗肋草</p>
                     <p>Aglaonema<br>commutatum</p>
@@ -115,35 +144,45 @@
         </div>
         <div class="products_cards_area">
             <div class="products_card">
-                <img src="./img/product_11.jpg" srcset="./img/product_11.jpg 3150w" alt="">
+                <a href="">
+                    <img src="./img/product_11.jpg" srcset="./img/product_11.jpg 3150w" alt="">
+                </a>
                 <a href="#">
                     <p>黃金葛</p>
                     <p>Devil's Ivy</p>
                 </a>
             </div>
             <div class="products_card">
-                <img src="./img/product_12.jpg" srcset="./img/product_12.jpg 3150w" alt="">
+                <a href="">
+                    <img src="./img/product_12.jpg" srcset="./img/product_12.jpg 3150w" alt="">
+                </a>
                 <a href="#">
                     <p>黃金葛</p>
                     <p>Devil's Ivy</p>
                 </a>
             </div>
             <div class="products_card">
-                <img src="./img/product_13.jpg" srcset="./img/product_13.jpg 3150w" alt="">
+                <a href="">
+                    <img src="./img/product_13.jpg" srcset="./img/product_13.jpg 3150w" alt="">
+                </a>
                 <a href="#">
                     <p>黃金葛</p>
                     <p>Devil's Ivy</p>
                 </a>
             </div>
             <div class="products_card">
-                <img src="./img/product_14.jpg" srcset="./img/product_14.jpg 3150w" alt="">
+                <a href="">
+                    <img src="./img/product_14.jpg" srcset="./img/product_14.jpg 3150w" alt="">
+                </a>
                 <a href="#">
                     <p>西瓜皮椒草</p>
                     <p>Peperomia argyreia</p>
                 </a>
             </div>
             <div class="products_card">
-                <img src="./img/product_15.jpg" srcset="./img/product_15.jpg 3150w" alt="">
+                <a href="">
+                    <img src="./img/product_15.jpg" srcset="./img/product_15.jpg 3150w" alt="">
+                </a>
                 <a href="#">
                     <p>鋸齒曇花</p>
                     <p>Epiphyllum anguliger</p>
@@ -153,35 +192,45 @@
         <h3>植栽盆</h3>
         <div class="products_cards_area products_show">
             <div class="products_card products_show">
-                <img src="./img/product_16.jpg" srcset="./img/product_16.jpg 3150w" alt="">
+                <a href="">
+                    <img src="./img/product_16.jpg" srcset="./img/product_16.jpg 3150w" alt="">
+                </a>
                 <a href="#">
                     <p>空氣鳳梨專用</p>
                     <p>木質月亮</p>
                 </a>
             </div>
             <div class="products_card products_show">
-                <img src="./img/product_17.jpg" srcset="./img/product_17.jpg 3150w" alt="">
+                <a href="">
+                    <img src="./img/product_17.jpg" srcset="./img/product_17.jpg 3150w" alt="">
+                </a>
                 <a href="#">
                     <p>空氣鳳梨專用</p>
                     <p>手掌心</p>
                 </a>
             </div>
             <div class="products_card products_show">
-                <img src="./img/product_18.jpg" srcset="./img/product_18.jpg 3150w" alt="">
+                <a href="">
+                    <img src="./img/product_18.jpg" srcset="./img/product_18.jpg 3150w" alt="">
+                </a>
                 <a href="#">
                     <p>空氣鳳梨專用</p>
                     <p>幸福負擔</p>
                 </a>
             </div>
             <div class="products_card products_show">
-                <img src="./img/product_19.jpg" srcset="./img/product_19.jpg 3150w" alt="">
+                <a href="">
+                    <img src="./img/product_19.jpg" srcset="./img/product_19.jpg 3150w" alt="">
+                </a>
                 <a href="#">
                     <p>空氣鳳梨專用</p>
                     <p>一般水泥磚款</p>
                 </a>
             </div>
             <div class="products_card products_show">
-                <img src="./img/product_20.jpg" srcset="./img/product_20.jpg 3150w" alt="">
+                <a href="">
+                    <img src="./img/product_20.jpg" srcset="./img/product_20.jpg 3150w" alt="">
+                </a>
                 <a href="#">
                     <p>空氣鳳梨專用</p>
                     <p>一般硬鋼絲線款</p>
@@ -190,35 +239,45 @@
         </div>
         <div class="products_cards_area">
             <div class="products_card">
-                <img src="./img/product_21.jpg" srcset="./img/product_21.jpg 3150w" alt="">
+                <a href="">
+                    <img src="./img/product_21.jpg" srcset="./img/product_21.jpg 3150w" alt="">
+                </a>
                 <a href="#">
                     <p>空氣鳳梨專用</p>
                     <p>慢生活蝸牛</p>
                 </a>
             </div>
             <div class="products_card">
-                <img src="./img/product_22.jpg" srcset="./img/product_22.jpg 3150w" alt="">
+                <a href="">
+                    <img src="./img/product_22.jpg" srcset="./img/product_22.jpg 3150w" alt="">
+                </a>
                 <a href="#">
                     <p>空氣鳳梨專用</p>
                     <p>微笑迎接</p>
                 </a>
             </div>
             <div class="products_card">
-                <img src="./img/product_23.jpg" srcset="./img/product_23.jpg 3150w" alt="">
+                <a href="">
+                    <img src="./img/product_23.jpg" srcset="./img/product_23.jpg 3150w" alt="">
+                </a>
                 <a href="#">
                     <p>空氣鳳梨專用</p>
                     <p>童趣蝙蝠</p>
                 </a>
             </div>
             <div class="products_card">
-                <img src="./img/product_24.jpg" srcset="./img/product_24.jpg 3150w" alt="">
+                <a href="">
+                    <img src="./img/product_24.jpg" srcset="./img/product_24.jpg 3150w" alt="">
+                </a>
                 <a href="#">
                     <p>空氣鳳梨專用</p>
                     <p>美麗女人</p>
                 </a>
             </div>
             <div class="products_card">
-                <img src="./img/product_25.jpg" srcset="./img/product_25.jpg 3150w" alt="">
+                <a href="">
+                    <img src="./img/product_25.jpg" srcset="./img/product_25.jpg 3150w" alt="">
+                </a>
                 <a href="#">
                     <p>空氣鳳梨專用</p>
                     <p>樹懶家族</p>
@@ -266,18 +325,20 @@
         </div>
     </div>
     <div class="footer">
-        <div class="triangle_1"></div>
-        <div class="rectangle"></div>
-        <div class="triangle_2"></div>
-        <div class="footer_circle_1"></div>
-        <div class="footer_circle_2"></div>
-        <div class="footer_circle_3"></div>
-        <div class="footer_circle_4"></div>
-        <div class="footer_circle_5"></div>
-        <div class="footer_circle_6"></div>
-        <div class="footer_circle_7"></div>
-        <div class="footer_circle_8"></div>
-        <div class="footer_circle_9"></div>
+        <div class="footer_pic">
+            <div class="triangle_1 close"></div>
+            <div class="rectangle"></div>
+            <div class="triangle_2 close" ></div>
+            <div class="footer_circle_1 close"></div>
+            <div class="footer_circle_2 close"></div>
+            <div class="footer_circle_3 close"></div>
+            <div class="footer_circle_4 close"></div>
+            <div class="footer_circle_5 close"></div>
+            <div class="footer_circle_6 close"></div>
+            <div class="footer_circle_7 close"></div>
+            <div class="footer_circle_8 close"></div>
+            <div class="footer_circle_9 close"></div>
+        </div>
         <div class="footer_txt">
             <div class="footer_txt_card_1">
                 <p>Copyright © 2024 植選Choice. All rights reserved.</p>

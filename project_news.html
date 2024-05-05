@@ -6,34 +6,43 @@
     <title>Document</title>
     <link rel="stylesheet" href="./cssreset.css">
     <link rel="stylesheet" href="./project_news.css">
+    <!-- aos -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> 
+    <!-- icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        function openNav(){
+            document.getElementById("mySidepanel").style.width = "500px";
+        }
+        function closeNav(){
+            document.getElementById("mySidepanel").style.width = "0";
+        }
+    </script>
 </head>
 <body>
-    <input type="checkbox" id="menu-switch">
-    <header class="main-header">
-        <a href="./index.html">
-            <div class="logo">
+    <div class="hender">
+        <div class="logo">
+            <a href="http://127.0.0.1:5501/index.html">
                 <img src="./img/mylogo.png" alt="">
-            </div>
-        </a>
-            <a href="#"></a>
+            </a>
         </div>
-        <label for="menu-switch" class="hb">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
-        <nav class="main-nav">
-            <a href="./project_news.html">最新消息</a>
-            <a href="./project_products.html">商品列表</a>
-            <a href="./project_livingroom.html">參考擺設</a>
-            <a href="./project_store_info.html">門市資訊</a>
-            <a href="./project_QA.html">植友QA</a>
-            <a href="./project_contact.html">聯絡我們</a>
-        </nav>
-    </header>
+        <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+            <i class="fa-solid fa-xmark" style="color: #ffffff7a;"></i>
+            </a>
+            <a href="http://127.0.0.1:5501/project_news.html">最新消息</a>
+            <a href="http://127.0.0.1:5501/project_products.html">商品列表</a>
+            <a href="http://127.0.0.1:5501/project_livingroom.html">參考擺設</a>
+            <a href="http://127.0.0.1:5501/project_store_info.html">門市資訊</a>
+            <a href="http://127.0.0.1:5501/project_QA.html">植友QA</a>
+            <a href="http://127.0.0.1:5501/project_contact.html">聯絡我們</a>
+        </div>
+        <button class="openbtn" onclick="openNav()">
+            <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+        </button>
+    </div>
     <div class="news_area">
         <h2>最新消息</h2>
             <div class="news_area_pic">
@@ -116,18 +125,20 @@
         </div>
     </div>
     <div class="footer">
-        <div class="triangle_1"></div>
-        <div class="rectangle"></div>
-        <div class="triangle_2"></div>
-        <div class="footer_circle_1"></div>
-        <div class="footer_circle_2"></div>
-        <div class="footer_circle_3"></div>
-        <div class="footer_circle_4"></div>
-        <div class="footer_circle_5"></div>
-        <div class="footer_circle_6"></div>
-        <div class="footer_circle_7"></div>
-        <div class="footer_circle_8"></div>
-        <div class="footer_circle_9"></div>
+        <div class="footer_pic">
+            <div class="triangle_1 close"></div>
+            <div class="rectangle"></div>
+            <div class="triangle_2 close" ></div>
+            <div class="footer_circle_1 close"></div>
+            <div class="footer_circle_2 close"></div>
+            <div class="footer_circle_3 close"></div>
+            <div class="footer_circle_4 close"></div>
+            <div class="footer_circle_5 close"></div>
+            <div class="footer_circle_6 close"></div>
+            <div class="footer_circle_7 close"></div>
+            <div class="footer_circle_8 close"></div>
+            <div class="footer_circle_9 close"></div>
+        </div>
         <div class="footer_txt">
             <div class="footer_txt_card_1">
                 <p>Copyright © 2024 植選Choice. All rights reserved.</p>

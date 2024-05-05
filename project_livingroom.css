@@ -1,74 +1,66 @@
-#menu-switch{
-    display: none;
-}
-.main-header{
-    background-color: transparent;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+.logo img{
+    width: 8%;
     position: fixed;
-    z-index: 10;
+    z-index: 5;
 }
 @media screen and (max-width: 768px) {
-    .main-header .main-nav{
-        width: 100%;
+    .logo img{
+        width: 18%;
     }
 }
-.main-header .hb{
-    width: 50px;
-    height: 50px;
-    background-color:#A37C66;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+.sidepanel  {
+    width: 0;
     position: fixed;
+    z-index: 5;
+    height: 500px;
     top: 0;
     right: 0;
-    z-index: 20;
-}
-.main-header .hb span{
-    width: 80%;
-    height: 2px;
-    background-color: white;
-}
-#menu-switch:checked ~ .main-header .hb{
-    background-color:#A37C66;
-}
-.main-header .main-nav{
-    display: none;
-    background-color:#A37C66;
-    top: 100%;
-    right: 0px;
-    width: 35%;
-    position: relative;
-    z-index: 10;
-}
-@media screen and (max-width: 768px) {
-    .main-header .main-nav{
-        width: 100%;
-    }
-}
-.main-header .main-nav a{
-    display: block;
-    padding: 32px 80px;
+    background-color: #A37C66;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding: 10px 0;
+}    
+.sidepanel a {
+    /* padding: 8px 32px 8px 8px; */
+    text-decoration: none;
+    padding: 30px 50px;
     letter-spacing: 8px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 22px;
     color: white;
+    display: block;
+    transition: 0.3s;
 }
-.main-header .main-nav a:hover{
+.sidepanel a:hover {
     color: rgba(255, 255, 255, 0.651);
     text-decoration: underline rgba(255, 255, 255, 0.37);
     text-underline-offset: .8em;
     text-decoration-thickness: 2px;
 }
-#menu-switch:checked ~ .main-header .main-nav{
-    display: block;
+.sidepanel .closebtn {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    font-size: 40px;
 }
-.logo img{
-    width: 50%;
+.openbtn {
+    font-size: 30px;
+    cursor: pointer;
+    background-color: #A37C66;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    float: right;
+    position: fixed;
+    z-index: 2;
 }
+.openbtn:hover {
+    background-color:#a78b7ac2;
+}
+
 .room_area h2{
     font-size: clamp(28px, 3.6458vw, 28px);
     font-weight: bold;
@@ -95,8 +87,8 @@
 }
 @media screen and (max-width: 996px) {
     .room_area_title_pic{
-        right: 110px;
-        top: 5px;    
+        display: none;
+
     }
 }
 .room_area_title_pic img{
@@ -115,12 +107,16 @@
 }
 .room_area_pic_txt {
     text-align: center;
-    margin: 80px;
-
+    margin: 80px 0px;
 }
 .room_area_pic_txt h3{
-    font-size: clamp(24px, 3.125vw, 24px);
-    margin: 80px;
+    font-size: clamp(22px, 2.864vw, 22px);
+    margin: 80px 0px;
+}
+@media screen and (max-width: 768px) {
+    .room_area_pic_txt {
+        margin: 80px 5px;
+    }
 }
 .room_area_pic_txt p{
     font-size: clamp(16px,2.083vw, 16px);
@@ -129,8 +125,9 @@
 }
 .room_area_pic_txt span{
     font-size: clamp(16px,2.083vw, 16px);
+    display: inline-block;
+    padding-top: 20px;
     letter-spacing: 3px;
-    line-height: 85px;
     border-bottom: 3px solid rgba(150, 150, 150, 0.651);
 }
 .room_area_cards{
@@ -175,8 +172,8 @@
 .room_area_2 span{
     font-size: clamp(16px,2.083vw, 16px);
     letter-spacing: 3px;
-    line-height: 65px;
-    padding-top: 50px;
+    line-height: 35px;
+    display: inline-block;
     border-bottom: 3px solid rgba(150, 150, 150, 0.651);
 }
 .room_area_3{
@@ -309,7 +306,7 @@
     color: rgba(255, 255, 255, 0.72);
     font-size: clamp(10px,1.302vw, 10px);
     letter-spacing: 3px;
-    line-height: 25px;
+    line-height: 20px;
     position: absolute;
     left: 90px;
     top: 165px;
@@ -336,43 +333,15 @@
     z-index: 5;
 }
 @media screen and (max-width: 768px) {
+    .close{
+        display: none;
+    }
+}
+@media screen and (max-width: 996px) {
     .footer_txt_card_2{
         display: none;
     }
     .footer_txt_card_3{
-        display: none;
-    }
-    .triangle_1{
-        display: none;
-    }
-    .triangle_2{
-        display: none;
-    }
-    .footer_circle_1{
-        display: none;
-    }
-    .footer_circle_2{
-        display: none;
-    }
-    .footer_circle_3{
-        display: none;
-    }
-    .footer_circle_4{
-        display: none;
-    }
-    .footer_circle_5{
-        display: none;
-    }
-    .footer_circle_6{
-        display: none;
-    }
-    .footer_circle_7{
-        display: none;
-    }
-    .footer_circle_8{
-        display: none;
-    }
-    .footer_circle_9{
         display: none;
     }
 }
