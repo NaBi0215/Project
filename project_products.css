@@ -294,28 +294,8 @@
 }
 @media screen and (max-width: 768px) {
     .ig_pic_area_1{
-        display: block;
-        padding-bottom: 0px;
-        width: auto;
-        height: auto;
-        display: flex;
-        gap: 1px;
-        margin-top: 150px;
-        padding: 0px 5px;    
-    }
-    .ig_pic_area_1 a{
-        color: #666;
-        flex-grow: 1; 
-        overflow: visible; 
-        transition: 1s;
-    }
-    .ig_pic_area_1 img{
-        height: 90%;
-    }
-    .ig_pic_area_1 a:hover{
-        flex-grow: 1;
+        display: none;
     }    
-    
     .ig_pic_area_2{
         display: none;
     }
