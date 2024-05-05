@@ -437,7 +437,7 @@
     color: rgba(255, 255, 255, 0.72);
     font-size: clamp(12px,1.562vw, 12px);
     letter-spacing: 3px;
-    line-height: 25px;
+    line-height: 20px;
     position: absolute;
     left: 610px;
     top: 165px;
@@ -447,7 +447,7 @@
     color: rgba(255, 255, 255, 0.72);
     font-size: clamp(12px,1.562vw, 12px);
     letter-spacing: 3px;
-    line-height: 25px;
+    line-height: 20px;
     position: absolute;
     right: 80px;
     top: 165px;

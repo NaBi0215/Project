@@ -67,22 +67,21 @@
 }
 #sliderBoard{ 
 	width: 60%;
-	height: 550px;
-	margin: auto 200px;
     position: relative;
-
+    margin: 0 auto;
 	overflow: hidden;
 }
 #content{
 	position: relative;
+    width: 100%;
 }
 #content li{
 	float: left;
+    width: 100%;
 }
 
 /*circle button*/
 #contentButton{
-	/* border: 1px solid red; */
 	height: 50px;
 	width: 100%;
 	text-align: center;
@@ -100,25 +99,6 @@
 }
 #contentButton li.clicked{
 	background-color: #666;
-}
-@media screen and (max-width: 996px) {
-    #sliderBoard{
-        margin: 0px auto;
-        width: 100%;
-    }
-}
-@media screen and (max-width: 768px) {
-    #sliderBoard{
-        display: none;
-    }
-}
-.banner_pic{
-    display: none;
-}
-@media screen and (max-width: 768px) {
-    .banner_pic{
-        display: block;
-    }
 }
 .title_area{
     text-align: center;
@@ -540,7 +520,7 @@
     color: rgba(255, 255, 255, 0.72);
     font-size: clamp(12px,1.562vw, 12px);
     letter-spacing: 3px;
-    line-height: 25px;
+    line-height: 20px;
     position: absolute;
     left: 610px;
     top: 165px;
@@ -550,7 +530,7 @@
     color: rgba(255, 255, 255, 0.72);
     font-size: clamp(12px,1.562vw, 12px);
     letter-spacing: 3px;
-    line-height: 25px;
+    line-height: 20px;
     position: absolute;
     right: 80px;
     top: 165px;
