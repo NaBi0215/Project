@@ -88,8 +88,7 @@
 }
 @media screen and (max-width: 996px) {
     .products_area_title_pic{
-        right: 110px;
-        top: 5px;    
+        display: none;
     }
 }
 .products_area_title_pic img{
@@ -103,6 +102,12 @@
     font-weight: bold;
     color: #6DB861 ;
     margin-left: 320px;
+}
+@media screen and (max-width: 996px) {
+    .products_area h3{
+    margin: 0;
+    padding-left: 100px;
+    }
 }
 @media screen and (max-width: 768px) {
     .products_area h3{
@@ -119,6 +124,12 @@
     height: 250px;
     margin: 50px 200px;
     gap: 30px;
+}
+@media screen and (max-width: 996px) {
+    .products_cards_area{
+        margin: 30px 70px;
+        height: 220px;
+    }
 }
 @media screen and (max-width: 768px) {
     .products_cards_area{
@@ -140,6 +151,12 @@
 }
 .products_card{
     padding-top: 20px;
+}
+@media screen and (max-width: 996px) {
+    .products_card{
+        padding-top: 30px;
+    }
+
 }
 .products_card a{
     text-decoration: none;
@@ -183,10 +200,15 @@
     top: -60px;
     left: 150px;
 }
+@media screen and (max-width: 996px) {
+    .plant_pic{
+    left: 30px;
+    top: -120px;
+    }
+}
 @media screen and (max-width: 768px) {
     .plant_pic{
-        left: 0px;
-        top: 100px;
+        display: none;
     }
 }
 .ig_pic_area_1{
@@ -240,6 +262,35 @@
 }
 .ig_pic_area a:hover{
     opacity: 1;
+}
+@media screen and (max-width: 996px) {
+    .ig_pic_area_1{
+        display: block;
+        padding-bottom: 0px;
+        width: 500px;
+        height: auto;
+        display: flex;
+        /* gap: 1px; */
+        margin-top: 150px;
+        padding: 0px 5px;    
+        margin-left: 150px;
+    }
+    .ig_pic_area_1 a{
+        color: #666;
+        flex-grow: 1; 
+        overflow: visible; 
+        transition: 1s;
+    }
+    .ig_pic_area_1 img{
+        height: 90%;
+    }
+    .ig_pic_area_1 a:hover{
+        flex-grow: 1;
+    }    
+    
+    .ig_pic_area_2{
+        display: none;
+    }
 }
 @media screen and (max-width: 768px) {
     .ig_pic_area_1{

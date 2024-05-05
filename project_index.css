@@ -68,7 +68,7 @@
 #sliderBoard{ 
 	width: 60%;
 	height: 550px;
-	margin: auto 250px;
+	margin: auto 200px;
     position: relative;
 
 	overflow: hidden;
@@ -101,7 +101,12 @@
 #contentButton li.clicked{
 	background-color: #666;
 }
-
+@media screen and (max-width: 996px) {
+    #sliderBoard{
+        margin: 0px auto;
+        width: 100%;
+    }
+}
 @media screen and (max-width: 768px) {
     #sliderBoard{
         display: none;
@@ -203,8 +208,14 @@
     height: auto;
     width: 50%;
     border-radius: 80px;
-    margin: 50px 80px;
+    margin: 50px 60px;
     order: 1;
+}
+@media screen and (max-width: 996px) {
+    .popular_explain_txt{
+    padding: 0px 5px;
+    margin: 50px 10px;
+    }
 }
 @media screen and (max-width: 768px) {
     .popular_explain_txt{
@@ -298,6 +309,12 @@
     padding: 0px 250px;
     padding-bottom: 100px;
 }
+@media screen and (max-width: 996px) {
+    .about_txt{
+    padding: 0px 150px;
+    }
+
+}
 .about_txt h2{
     font-size: clamp(28px, 3.6458vw, 28px);
     font-weight: bold;
@@ -339,7 +356,7 @@
     }
     @media screen and (max-width: 996px) {
         .circle2{
-            top: 38%;
+            display: none;
         }
     
 }
@@ -366,6 +383,11 @@
     padding-top: 52px;
     width: 80%;
 }
+@media screen and (max-width: 996px) {
+    .about_explain_pic{
+        padding-top: 12%;
+    }
+}
 @media screen and (max-width: 768px) {
     .about_explain_card{
         display: flex;
@@ -380,7 +402,6 @@
     .about_explain_pic img{
         width: 90%;
     }
-    
 }
 .footer{
     position: relative;
