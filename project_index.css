@@ -508,11 +508,11 @@
 }
 .footer_txt_card_1{
     color: rgba(255, 255, 255, 0.72);
-    font-size: clamp(10px,1.302vw, 10px);
+    font-size: 10px;
     letter-spacing: 3px;
-    line-height: 20px;
+    line-height: 25px;
     position: absolute;
-    left: 90px;
+    left: 75px;
     top: 165px;
     z-index: 5;
 }
