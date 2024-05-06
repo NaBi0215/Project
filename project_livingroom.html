@@ -15,12 +15,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <script>
+        //導覽列
         function openNav(){
-            document.getElementById("mySidepanel").style.width = "350px";
+        var sidepanel = document.getElementById("mySidepanel");
+        if(window.innerWidth <= 768){
+            sidepanel.style.width = "100%";
+        } else {
+            sidepanel.style.width = "40%";
         }
-        function closeNav(){
-            document.getElementById("mySidepanel").style.width = "0";
-        }
+    }
+    function closeNav(){
+        document.getElementById("mySidepanel").style.width = "0";
+    }
     </script>
 
 </head>

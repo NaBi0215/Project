@@ -14,17 +14,29 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="./project_index.js"></script>
-    <script>
-        function openNav(){
-            document.getElementById("mySidepanel").style.width = "350px";
-        }
-        function closeNav(){
-            document.getElementById("mySidepanel").style.width = "0";
-        }
-    </script>
+    <!--Owl-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
     <script>
+        //導覽列
+        function openNav(){
+        var sidepanel = document.getElementById("mySidepanel");
+        if(window.innerWidth <= 768){
+            sidepanel.style.width = "100%";
+        } else {
+            sidepanel.style.width = "40%";
+        }
+    }
+    function closeNav(){
+        document.getElementById("mySidepanel").style.width = "0";
+    }
+    </script>
+    
+    <script>
+        //title藤蔓效果
         $(function () {
             $('.fadein').hide().fadeIn(3000);
         });
@@ -44,7 +56,7 @@
             });
         });
     </script>
-
+    
 </head>
 <body>
     <div class="hender">
@@ -69,26 +81,25 @@
         </button>
     </div>
 
-
-    <div id="sliderBoard">
-        <ul id="content">
-            <li><img src="./img/livingroom_01.jpg" class="image"></li>
-            <li><img src="./img/livingroom_02.jpg" class="image"></li>
-            <li><img src="./img/livingroom_03.jpg" class="image"></li>
-            <li><img src="./img/livingroom_04.jpg" class="image"></li>
-            <li><img src="./img/livingroom_05.jpg" class="image"></li>
-        </ul>
-        <ul id="contentButton">
-            <!-- <li class="clicked"></li>
-			<li ></li>
-			<li ></li>
-			<li ></li>
-			<li ></li>
-			<li ></li>
-			<li ></li>
-			<li ></li> -->
-        </ul>
+    <div class="owl-carousel owl-theme">
+        <div class="item"><img src="./img/livingroom_01.png"></div>
+        <div class="item"><img src="./img/livingroom_02.png"></div>
+        <div class="item"><img src="./img/livingroom_03.png"></div>
+        <!-- <div class="item"><img src="./img/livingroom_04.png"></div> -->
+        <div class="item"><img src="./img/livingroom_05.png"></div>
     </div>
+
+    <script>
+    var owl = $('.owl-carousel');
+    owl.owlCarousel({
+        items:1,
+        loop:true,
+        margin:10,
+        autoplay:true,
+        autoplayTimeout:3000,
+        autoplayHoverPause:true
+    });
+        </script>
 
     <div class="title_area">
         <img src="./img/2357052-2 1.png" alt="">
@@ -203,5 +214,6 @@
             </div>
         </div>
     </div>
+
 </body>
 </html>

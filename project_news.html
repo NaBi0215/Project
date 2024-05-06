@@ -16,12 +16,18 @@
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
+        //導覽列
         function openNav(){
-            document.getElementById("mySidepanel").style.width = "350px";
+        var sidepanel = document.getElementById("mySidepanel");
+        if(window.innerWidth <= 768){
+            sidepanel.style.width = "100%";
+        } else {
+            sidepanel.style.width = "40%";
         }
-        function closeNav(){
-            document.getElementById("mySidepanel").style.width = "0";
-        }
+    }
+    function closeNav(){
+        document.getElementById("mySidepanel").style.width = "0";
+    }
     </script>
 </head>
 <body>
