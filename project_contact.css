@@ -1,71 +1,97 @@
-#menu-switch{
-    display: none;
-}
-.main-header{
-    background-color: transparent;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+.logo img{
+    width: 8%;
     position: fixed;
-    z-index: 10;
+    z-index: 5;
 }
-.main-header .hb{
-    width: 50px;
-    height: 50px;
-    background-color:#A37C66;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+@media screen and (max-width: 768px) {
+    .logo img{
+        width: 18%;
+    }
+}
+.sidepanel  {
+    width: 0;
     position: fixed;
+    z-index: 5;
+    height: 500px;
     top: 0;
     right: 0;
-    z-index: 20;
-}
-.main-header .hb span{
-    width: 80%;
-    height: 2px;
-    background-color: white;
-}
-#menu-switch:checked ~ .main-header .hb{
-    background-color:#A37C66;
-}
-.main-header .main-nav{
-    display: none;
-    background-color:#A37C66;
-    top: 100%;
-    right: 0px;
-    width: 35%;
-    position: relative;
-    z-index: 10;
-}
-.main-header .main-nav a{
-    display: block;
-    padding: 32px 80px;
+    background-color: #A37C66;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding: 10px 0;
+}    
+.sidepanel a {
+    /* padding: 8px 32px 8px 8px; */
+    text-decoration: none;
+    padding: 30px 50px;
     letter-spacing: 8px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 22px;
     color: white;
+    display: block;
+    transition: 0.3s;
 }
-.main-header .main-nav a:hover{
+.sidepanel a:hover {
     color: rgba(255, 255, 255, 0.651);
     text-decoration: underline rgba(255, 255, 255, 0.37);
     text-underline-offset: .8em;
     text-decoration-thickness: 2px;
 }
-#menu-switch:checked ~ .main-header .main-nav{
-    display: block;
-}
-.logo img{
-    width: 50%;
-}
-/* .contact_area{
-    position: relative;
-}
-.fa-hand-point-down{
+.sidepanel .closebtn {
     position: absolute;
-    top:20px
-} */
+    top: 0px;
+    right: 0px;
+    font-size: 40px;
+}
+.openbtn {
+    font-size: 30px;
+    cursor: pointer;
+    background-color: #A37C66;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    float: right;
+    position: fixed;
+    z-index: 2;
+}
+.openbtn:hover {
+    background-color:#a78b7ac2;
+}
+
+.contact_title_pic{
+    position: relative;
+    opacity: 0;
+    animation: fadeIn 3s ease forwards;
+}
+@keyframes fadeIn {
+    from {
+      opacity: 0; /* 初始狀態，完全透明 */
+    }
+    to {
+      opacity: 1; /* 結束狀態，完全不透明 */
+    }
+}
+@media screen and (max-width: 768px) {
+    .contact_title_pic{
+        display: none;
+    }
+}
+@media screen and (max-width: 996px) {
+    .contact_title_pic{
+        display: none;
+
+    }
+}
+.contact_title_pic img{
+    position: absolute;
+    width: 10%;
+    left: 590px;
+    top: 125px;
+}
+
 .contact_title h2{
     font-size: 28px;
     font-weight: bold;
@@ -76,112 +102,141 @@
 .contact_area{
     margin-bottom: 50px;
 }
+.txt_move{
+    /*文字動畫*/
+    color: rgb(255, 255, 255);
+    width: 200px;
+    margin: 0 auto;    
+}
 .contact_title h3{
     font-size: 16px;
     color:#727272;
-    text-decoration: underline #7272725b;
+    text-align: center;
+    /* text-decoration: underline #6DB861; */
     text-underline-offset: .5em;
     text-decoration-thickness: 1.2px;
-    padding-left: 300px;
     letter-spacing: 10px;
-    /* line-height: 40px; */
-    padding-bottom: 60px;
+    padding: 30px 0px;
 }
-.contact_title h4{
+.txt_move h4{
     font-size: 16px;
     color:#727272;
-    letter-spacing: 10px;
-    line-height: 40px;
-    padding-left: 525px;
-    padding-bottom: 100px;
+    letter-spacing: 5px;
+    line-height: 20px;
+    text-align: center;
+    /*文字動畫*/
+    display: inline-block;
+    background: linear-gradient(90deg, #6DB861,#6DB861);
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    background-position: left;
+    color: transparent;
+    background-clip: text;
+    animation: show 2s ease-out forwards;
+}
+@keyframes show{
+    to{
+        background-size: 100% 100%;
+    }
 }
 .contact_txt{
-    padding-left: 200px;
+    /* padding-left: 200px; */
+    text-align: center;
 }
 .contact_txt_name{
     font-size: 18px;
     color:#727272;
-    margin: 50px 0px;
-    margin-left: 100px;
+    margin-top: 80px;
+    margin-bottom: 30px;
 }
 .contact_txt_name input[type="text"] {
-    background: #6db86142;    
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #6DB861;
     font-size: 18px; 
     padding: 0px 10px; 
-    width: 200px; 
-    height: 30px;
-    margin-left: 200px;
+    width: 15%; 
+    margin-left: 2%;
 }
 .contact_txt_mail{
     font-size: 18px;
     color:#727272;
     margin: 10px 0px;
-    margin-left: 100px;
+    margin-left: -10%;
 }
 .contact_txt_mail input[type="email"] {
-    background: #6db86142;    
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #6DB861;
     font-size: 18px; 
     padding: 0px 10px; 
-    width: 200px;
-    height: 30px; 
-    margin-left: 55px;
+    margin-left: 2%;
 }
 .contact_txt_what h5{
-    font-size: 18px;
-    color:#727272;
-    margin: 50px 0px;
-    margin-left: 100px;
-}
-.checkbox_area{
     font-size: 16px;
     color:#727272;
-    margin: 50px 0px;
-    margin-left: 250px;
-}
-.checkbox_area input[type="checkbox"]{
-    position: absolute;
-    opacity: 0;
-}
-.checkbox_area input[type="checkbox"] + label::before{
-    content: "";
-    display: inline-block;
-    background-color: #6db86142;
-    width: 30px;
-    height: 30px;
-    vertical-align: middle;
-    margin-right: 5px;
-}
-.checkbox_area input[type="checkbox"]:checked + label::before{ 
-    content: "\2713";
-    color: black;
-    font-size: 30px;
     text-align: center;
-    line-height: 30px;
+    text-underline-offset: .5em;
+    text-decoration-thickness: 1.2px;
+    letter-spacing: 5px;
+    margin-top: 80px;
+    margin-bottom: 50px;
 }
-.contact_txt_what_more{
+#productsForm{
+    color:#727272;
     position: relative;
 }
-.contact_txt_what_more input[type="textarea"]{
-    background-color: #6db86142;
-    border-radius: 85px;
-    font-size: 20px;
-    height: 200px;
-    width: 470px;
-    padding: 50px;
-    margin-left: 180px;
-    border: none;
+input[type="checkbox"] {
+    display: none;
 }
-.contact_txt_what_more button{
-    font-size: 22px;
-    border-radius: 85px;
-    padding: 3px 20px;
+.coverStyle{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    /* background-color: #eee; */
+    border: 2px solid #6db86182;
+    border-radius: 3px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+input[type="checkbox"]:checked + .coverStyle::after {
+    content: '\2714';
+    font-size: 25px;
+    color: #727272;
+    text-align: center;
+    line-height: 18px;
+}
+input[type="textarea"] {
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    border: 2px solid #6db86182;
+    border-radius: 35px;
+    margin: 30px 0px;
+    width: 40%;
+    height: 200px;
+}
+input[type="submit"]{
+    background: none;
+    border: none;
+    outline: none;
+
+    font-size: 18px;
+    padding: 3px 14px;
     background-color: transparent;
-    border: 1px solid #6db861;
+    border-bottom: 3px solid #6db861;
     color: #6db861;
-    position: absolute;
-    bottom: 10px;
-    right: 190px;
-    z-index: 1;
+    position: absolute; 
+    bottom: 35px;
+    right: 280px;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    background-color: #6db86153;
+    border-radius: 15px;
 }
 .footer{
     position: relative;
@@ -310,7 +365,7 @@
     color: rgba(255, 255, 255, 0.72);
     font-size: 10px;
     letter-spacing: 3px;
-    line-height: 25px;
+    line-height: 20px;
     position: absolute;
     left: 75px;
     top: 165px;
@@ -318,9 +373,9 @@
 }
 .footer_txt_card_2{
     color: rgba(255, 255, 255, 0.72);
-    font-size: 12px;
+    font-size: clamp(12px,1.562vw, 12px);
     letter-spacing: 3px;
-    line-height: 25px;
+    line-height: 20px;
     position: absolute;
     left: 610px;
     top: 165px;
@@ -328,11 +383,24 @@
 }
 .footer_txt_card_3{
     color: rgba(255, 255, 255, 0.72);
-    font-size: 12px;
+    font-size: clamp(12px,1.562vw, 12px);
     letter-spacing: 3px;
-    line-height: 25px;
+    line-height: 20px;
     position: absolute;
     right: 80px;
     top: 165px;
     z-index: 5;
+}
+@media screen and (max-width: 768px) {
+    .close{
+        display: none;
+    }
+}
+@media screen and (max-width: 996px) {
+    .footer_txt_card_2{
+        display: none;
+    }
+    .footer_txt_card_3{
+        display: none;
+    }
 }

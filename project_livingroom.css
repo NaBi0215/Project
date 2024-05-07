@@ -112,23 +112,39 @@
 .room_area_pic_txt h3{
     font-size: clamp(22px, 2.864vw, 22px);
     margin: 80px 0px;
+    text-decoration: underline rgb(255, 235, 204);
+    text-underline-offset: -.2em;
+    text-decoration-thickness: 12px;
 }
 @media screen and (max-width: 768px) {
     .room_area_pic_txt {
         margin: 80px 5px;
     }
 }
+.txt_move{
+        /*文字動畫*/
+        color: rgb(255, 255, 255);
+        width:40vw;    
+        margin: 0 auto;
+}
 .room_area_pic_txt p{
     font-size: clamp(16px,2.083vw, 16px);
     letter-spacing: 5px;
     line-height: 35px;
-}
-.room_area_pic_txt span{
-    font-size: clamp(16px,2.083vw, 16px);
+    /*文字動畫*/
     display: inline-block;
-    padding-top: 20px;
-    letter-spacing: 3px;
-    border-bottom: 3px solid rgba(150, 150, 150, 0.651);
+    background: linear-gradient(90deg, #6a6a6a, #242424);
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    background-position: left;
+    color: transparent;
+    background-clip: text;
+    animation: show 5s ease-out forwards;
+}
+@keyframes show{
+    to{
+        background-size: 100% 100%;
+    }
 }
 .room_area_cards{
     display: flex;

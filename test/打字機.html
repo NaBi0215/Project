@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .contain{
+            color: rgb(255, 255, 255);
+            width:40vw;
+        }
+        p{
+            display: inline-block;
+            background: linear-gradient(90deg, #ff9696, #ff3c3c);
+            background-size: 0% 100%;
+            background-repeat: no-repeat;
+            background-position: left;
+            color: transparent;
+            background-clip: text;
+
+            animation: show 5s ease-out forwards;
+        }
+
+        @keyframes show{
+            to{
+                background-size: 100% 100%;
+            }
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="contain">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto laudantium voluptate sed velit illum sint. Ratione aperiam non consequuntur, praesentium illo laudantium magni? In non amet fuga deleniti accusamus saepe?</p>
+    </div>
+</body>
+</html>

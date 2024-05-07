@@ -9,10 +9,11 @@
     <link rel="shortcut icon" href="./img/mylogo.png" type="image/x-icon">
     <link rel="stylesheet" href="./cssreset.css">
     <link rel="stylesheet" href="./project_contact.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <script>
-    //導覽列
-    function openNav(){
+        //導覽列
+        function openNav(){
         var sidepanel = document.getElementById("mySidepanel");
         if(window.innerWidth <= 768){
             sidepanel.style.width = "100%";
@@ -23,41 +24,62 @@
     function closeNav(){
         document.getElementById("mySidepanel").style.width = "0";
     }
-</script>
+    </script>
 
+    <script>
+        //checkbox
+        document.getElementById('productsForm').addEventListener('submit',function(event){
+            event.preventDefault();
+
+            var newProducts = document.querySelector('input[name="newProducts"]');
+            var purchasedProducts = document.querySelector('input[name="purchasedProducts"]');
+            var others = document.querySelector('input[name="others"]');
+
+            var active = [];
+            if(newProducts.checked){
+                active.push(newProducts.value);
+            }else if(purchasedProducts.checked){
+                active.push(purchasedProducts.value);
+            }else if(others.checked){
+                active.push(others.value);
+            }
+        })
+    </script>
+    
 </head>
 <body>
-    <input type="checkbox" id="menu-switch">
-    <header class="main-header">
-        <a href="./index.html">
-            <div class="logo">
+    <div class="hender">
+        <div class="logo">
+            <a href="./index.html">
                 <img src="./img/mylogo.png" alt="">
-            </div>
-        </a>
-            <a href="#"></a>
+            </a>
         </div>
-        <label for="menu-switch" class="hb">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
-        <nav class="main-nav">
+        <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+            <i class="fa-solid fa-xmark" style="color: #ffffff7a;"></i>
+            </a>
             <a href="./project_news.html">最新消息</a>
             <a href="./project_products.html">商品列表</a>
             <a href="./project_livingroom.html">參考擺設</a>
             <a href="./project_store_info.html">門市資訊</a>
             <a href="./project_QA.html">植友QA</a>
             <a href="./project_contact.html">聯絡我們</a>
-        </nav>
-    </header>
+        </div>
+        <button class="openbtn" onclick="openNav()">
+            <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+        </button>
+    </div>
     <div class="contact_area">
-        <!-- <div class="icon">
-            <i class="fa-light fa-hand-point-down"></i>
-        </div> -->
         <div class="contact_title">
+            <div class="contact_title_pic">
+                <img src="./img/1438023.png" alt="">
+            </div>
             <h2>聯絡我們</h2>
             <h3>還有什麼想問的嗎?</h3>
-            <h4>底下留言讓我們知道<br>我們將竭誠為您服務</h4>
+            <div class="txt_move">
+                <h4>底下留言讓我們知道</h4>
+                <h4>我們將竭誠為您服務</h4>
+            </div>
         </div>
         <div class="contact_txt">
             <div class="contact_txt_name">
@@ -68,37 +90,42 @@
                 <input type="email" name="#" id="#">
             </div>
             <div class="contact_txt_what">
-                <h5>想詢問我們什麼呢</h5>
-                <div class="checkbox_area">
-                    <input type="checkbox" id="checkbox1">
-                    <label for="checkbox1">關於新商品</label>
-                    <input type="checkbox" id="checkbox2">
-                    <label for="checkbox2">關於已購買商品</label>
-                    <input type="checkbox" id="checkbox3">
-                    <label for="checkbox3">其他</label>
-                </div>
-                <div class="contact_txt_what_more">
+                <h5>想詢問我們什麼呢?</h5>
+                <form id="productsForm">
+                    <label class="newProducts">
+                        <input type="checkbox" name="newProducts" value="new">
+                        <span class="coverStyle"></span>關於新商品
+                    </label>
+                    <label class="purchasedProducts">
+                        <input type="checkbox" name="purchasedProducts" value="purchased">
+                        <span class="coverStyle"></span>關於已購入商品
+                    </label>
+                    <label class="others">
+                        <input type="checkbox" name="others" value="others">
+                        <span class="coverStyle"></span>其它
+                    </label><br>
                     <input type="textarea">
-                    <button type="submit">送出</button>
-                </div>
+                    <input type="submit">
+                </form>
             </div>
         </div>
     </div>
     <div class="footer">
-        <div class="triangle_1"></div>
-        <div class="rectangle"></div>
-        <div class="triangle_2"></div>
-        <div class="footer_circle_1"></div>
-        <div class="footer_circle_2"></div>
-        <div class="footer_circle_3"></div>
-        <div class="footer_circle_4"></div>
-        <div class="footer_circle_5"></div>
-        <div class="footer_circle_6"></div>
-        <div class="footer_circle_7"></div>
-        <div class="footer_circle_8"></div>
-        <div class="footer_circle_9"></div>
-        <div class="footer_txt">
-            <div class="footer_txt_card_1">
+        <div class="footer_pic">
+            <div class="triangle_1 close"></div>
+            <div class="rectangle"></div>
+            <div class="triangle_2 close" ></div>
+            <div class="footer_circle_1 close"></div>
+            <div class="footer_circle_2 close"></div>
+            <div class="footer_circle_3 close"></div>
+            <div class="footer_circle_4 close"></div>
+            <div class="footer_circle_5 close"></div>
+            <div class="footer_circle_6 close"></div>
+            <div class="footer_circle_7 close"></div>
+            <div class="footer_circle_8 close"></div>
+            <div class="footer_circle_9 close"></div>
+        </div>
+                <div class="footer_txt_card_1">
                 <p>Copyright © 2024 植選Choice. All rights reserved.</p>
                 <p>本網站僅供學習使用 無任何商業用途<br>
                     This website is for educational use only.</p>

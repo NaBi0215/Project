@@ -294,6 +294,24 @@
             </div>
         </div>
     </div>
+    <div id="page_btn">
+        <button class="btn active">1</button>
+        <button class="btn">2</button>
+        <button class="btn">3</button>
+        <button class="btn">4</button>
+        <button class="btn">5</button>
+    </div>
+    <script>
+        var header = document.getElementById('page_btn'); 
+        var btns = header.getElementsByClassName('btn'); //抓取元素存於容器內
+        for(var i = 0; i < btn.length; i++){ //找所有子元素
+            btns[i].addEventListener('click',function(){ //監聽每個子元素添加click事件
+                var current = document.getElementsByClassName('active'); //抓取當前活動元素存於容器內
+                current[0].className = current[0].className.replace('active','');
+                this.className += 'active' ;
+            });
+        }
+    </script>
     <div class="ig_pic_area">
         <div class="plant_pic">
             <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script><lottie-player src="https://lottie.host/6b9e104d-4fac-4031-b342-d5a9a983ac4c/AYKyoexckj.json" background="##fff" speed=".5" style="width: 150px; height: 150px" loop autoplay direction="1" mode="normal"></lottie-player>

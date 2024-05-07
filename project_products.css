@@ -191,6 +191,25 @@
         transform: initial;
     }    
 }
+#page_btn{
+    text-align: center;
+    margin-top: 100px;
+}
+.btn{
+    border: none;
+    outline:none;
+    font-size: 18px;
+    background-color: transparent;
+    /* border-bottom: 2px solid #6DB861; */
+    padding: 10px 16px;
+    cursor: pointer;
+}
+.active,
+.btn:hover {
+    border: none;
+    background-color: rgba(88, 235, 69, 0.361);
+    border-radius: 15px;
+}
 .ig_pic_area{
     margin: 50px 0px;
     position: relative;

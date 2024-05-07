@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 隐藏默认复选框 */
+input[type="checkbox"] {
+    display: none;
+}
+
+/* 自定义复选框样式 */
+.checkmark {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* 复选框选中状态样式 */
+input[type="checkbox"]:checked + .checkmark::after {
+    content: '\2713'; /* Unicode编码：✔ */
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    line-height: 18px;
+}
+
+/* 当复选框选中时改变背景颜色 */
+input[type="checkbox"]:checked + .checkmark {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+    </style>
+</head>
+<body>
+    <form id="productsForm">
+        <label>
+            <input type="checkbox" name="newProducts" value="new">
+            <span class="checkmark"></span> 关于新商品
+        </label>
+        <label>
+            <input type="checkbox" name="purchasedProducts" value="purchased">
+            <span class="checkmark"></span> 关于已购商品
+        </label>
+        <label>
+            <input type="checkbox" name="others" value="others">
+            <span class="checkmark"></span> 其他
+        </label>
+        <button type="submit">提交</button>
+    </form>
+</body>
+</html>
+
+
+</body>
+
+</html>
