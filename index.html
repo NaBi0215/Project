@@ -19,7 +19,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-
     <script>
         //導覽列
         function openNav(){
@@ -33,30 +32,27 @@
     function closeNav(){
         document.getElementById("mySidepanel").style.width = "0";
     }
-    </script>
     
-    <script>
-        //title藤蔓效果
-        $(function () {
-            $('.fadein').hide().fadeIn(3000);
-        });
+    //title藤蔓效果
+    $(function () {
+        $('.fadein').hide().fadeIn(3000);
+    });
 
-        document.addEventListener("DOMContentLoaded", function() {
-            // 監聽滾動事件
-            window.addEventListener("scroll", function() {
-                // 取得元素距離頂部的距離
-                var elementTop = document.querySelector('.popular_title_pic').getBoundingClientRect().top;
-                // 設定閾值，表示使用者滑到元素上方的多遠時觸發效果
-                var threshold = window.innerHeight * 0.8;
+    document.addEventListener("DOMContentLoaded", function() {
+        // 監聽滾動事件
+        window.addEventListener("scroll", function() {
+            // 取得元素距離頂部的距離
+            var elementTop = document.querySelector('.popular_title_pic').getBoundingClientRect().top;
+            // 設定閾值，表示使用者滑到元素上方的多遠時觸發效果
+            var threshold = window.innerHeight * 0.8;
 
-                // 如果元素進入視窗上方閾值內，則添加.fade-in類，觸發淡入效果
-                if (elementTop < threshold) {
-                document.querySelector('.popular_title_pic').classList.add('fade-in');
-                }
-            });
+            // 如果元素進入視窗上方閾值內，則添加.fade-in類，觸發淡入效果
+            if (elementTop < threshold) {
+            document.querySelector('.popular_title_pic').classList.add('fade-in');
+            }
         });
-    </script>
-    
+    });
+    </script>    
 </head>
 <body>
     <div class="hender">

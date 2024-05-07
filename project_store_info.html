@@ -17,17 +17,16 @@
         //導覽列
         function openNav(){
         var sidepanel = document.getElementById("mySidepanel");
-        if(window.innerWidth <= 768){
-            sidepanel.style.width = "100%";
-        } else {
-            sidepanel.style.width = "40%";
+            if(window.innerWidth <= 768){
+                sidepanel.style.width = "100%";
+            } else {
+                sidepanel.style.width = "40%";
+            }
         }
-    }
-    function closeNav(){
-        document.getElementById("mySidepanel").style.width = "0";
-    }
+        function closeNav(){
+            document.getElementById("mySidepanel").style.width = "0";
+        }
     </script>
-
 </head>
 <body>
     <div class="hender">
@@ -130,7 +129,6 @@
         </div>
     </div>
     <script>
-        
         document.addEventListener("DOMContentLoaded", function() {
             // 監聽滾動事件
             window.addEventListener("scroll", function() {

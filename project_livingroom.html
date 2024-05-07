@@ -14,33 +14,6 @@
     <!-- aos -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> 
 
-    <script>
-        //導覽列
-        function openNav(){
-        var sidepanel = document.getElementById("mySidepanel");
-        if(window.innerWidth <= 768){
-            sidepanel.style.width = "100%";
-        } else {
-            sidepanel.style.width = "40%";
-        }
-    }
-    function closeNav(){
-        document.getElementById("mySidepanel").style.width = "0";
-    }
-    </script>
-
-    <script>
-        document.addEventListener("DOMContentLoaded",function(){
-            window.addEventListener("scroll",function(){
-                var elementTop = document.querySelector('.room_area_pic_txt p').getBoundingClientRect().top;
-                var threshold = window.innerHeight * 0.8;
-                if(elementTop < threshold){
-                    document.querySelector('.room_area_pic_txt p').classList.add('show')
-                }
-            })
-        })
-    </script>
-
 </head>
 <body>
     <div class="hender">
@@ -77,7 +50,7 @@
             <div class="room_area_pic_txt">
                 <h3>海島夏威夷風格</h3>
                 <div class="txt_move">
-                    <p>是否覺得房間的擺設過於單調無聊,缺乏新元素呢?<br>
+                    <p class="a">是否覺得房間的擺設過於單調無聊,缺乏新元素呢?<br>
                         擺上幾株充滿海島風情的植栽<br>
                         簡單就讓自己彷彿置身於夏威夷海島國家<br>
                         家居植物擺設不僅可以讓人感到放鬆也能夠讓人充滿幸福感
@@ -156,7 +129,7 @@
                 <h3>綠意叢林浴室風格</h3>
                 <p>廁所是個讓人備感放鬆的處所<br>
                     若能增添幾株綠色植物再好不過<br>
-                    浴室內高潮濕的地方最適合擺放非常需要溼氣的植物<br>
+                    浴室內高潮濕的地方最適合擺放需要溼氣的植物<br>
                     不僅提升浴室整體的美觀度,
                     也帶來了淨化空氣的效果</p>
             </div>
@@ -221,4 +194,50 @@
         </div>
     </div>
 </body>
+<script>
+    //導覽列
+    function openNav(){
+        var sidepanel = document.getElementById("mySidepanel");
+        if(window.innerWidth <= 768){
+            sidepanel.style.width = "100%";
+        } else {
+            sidepanel.style.width = "40%";
+        }
+    }
+    function closeNav(){
+        document.getElementById("mySidepanel").style.width = "0";
+    }
+
+    function animation(){
+        let elements = document.querySelectorAll('.room_area_pic_txt');
+        let threshold = window.innerHeight * 0.8;
+        elements.forEach(function (emt){
+            // 取得每個元素的頂部位置
+            let elementTop = emt.getBoundingClientRect().top;
+
+            // 檢查該元素的頂部位置是否小於 threshold
+            if (elementTop < threshold) {
+                // 執行動作
+                // 添加一個 CSS 類名稱到當前元素
+                let p1 = emt.querySelector('p');
+                if(p1){
+                    p1.classList.add('animation');
+                }
+            } else {
+                // 如果不符合條件，你可能也想要移除 CSS 類名稱
+                let p1 = emt.querySelector('p');
+                if(p1){
+                    p1.classList.remove('animation');
+                }
+            }
+        });
+    }
+    //對應重新整理
+    document.addEventListener("DOMContentLoaded",function(){
+        animation();
+        window.addEventListener("scroll",function(){
+            animation();
+        })
+    })
+</script>
 </html>

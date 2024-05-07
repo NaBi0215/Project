@@ -11,22 +11,21 @@
     <link rel="stylesheet" href="./project_QA.css">
     <!-- icon-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script>
         //導覽列
         function openNav(){
         var sidepanel = document.getElementById("mySidepanel");
-        if(window.innerWidth <= 768){
-            sidepanel.style.width = "100%";
-        } else {
-            sidepanel.style.width = "40%";
+            if(window.innerWidth <= 768){
+                sidepanel.style.width = "100%";
+            } else {
+                sidepanel.style.width = "40%";
+            }
         }
-    }
-    function closeNav(){
-        document.getElementById("mySidepanel").style.width = "0";
-    }
+        function closeNav(){
+            document.getElementById("mySidepanel").style.width = "0";
+        }
     </script>
-    
 </head>
 <body>
     <div class="hender">
@@ -141,6 +140,5 @@
             });
         }
     </script>       
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </body>
 </html>

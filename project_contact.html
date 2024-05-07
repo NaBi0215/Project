@@ -15,18 +15,15 @@
         //導覽列
         function openNav(){
         var sidepanel = document.getElementById("mySidepanel");
-        if(window.innerWidth <= 768){
-            sidepanel.style.width = "100%";
-        } else {
-            sidepanel.style.width = "40%";
+            if(window.innerWidth <= 768){
+                sidepanel.style.width = "100%";
+            } else {
+                sidepanel.style.width = "40%";
+            }
         }
-    }
-    function closeNav(){
-        document.getElementById("mySidepanel").style.width = "0";
-    }
-    </script>
-
-    <script>
+        function closeNav(){
+            document.getElementById("mySidepanel").style.width = "0";
+        }
         //checkbox
         document.getElementById('productsForm').addEventListener('submit',function(event){
             event.preventDefault();
