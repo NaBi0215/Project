@@ -24,7 +24,7 @@
     text-decoration: none;
     letter-spacing: 8px;
     text-decoration: none;
-    font-size: 22px;
+    font-size: clamp(22px,2.864vw, 22px);
     color: white;
     display: block;
     padding: 30px 45%;
@@ -35,6 +35,11 @@
     text-decoration: underline rgba(255, 255, 255, 0.37);
     text-underline-offset: .8em;
     text-decoration-thickness: 2px;
+}
+@media screen and (max-width: 768px) {
+    .sidepanel a {
+        padding: 30px 30%;
+    }
 }
 .sidepanel .closebtn {
     position: absolute;
@@ -189,7 +194,7 @@
     color: rgb(102, 102, 102);
     padding: 30px 0px;
     text-align: center;
-    letter-spacing: .3em;
+    letter-spacing: .1rem;
     line-height: 2em;
 }
 .popular_pic{
@@ -270,9 +275,9 @@
     padding-bottom: 20px;
 }
 .about_txt p{
-    font-size: clamp(18px, 2.343vw, 18px);
-    line-height: 2em;
-    letter-spacing: .5em;
+    font-size: clamp(16px, 2.083vw, 16px);
+    line-height: 2.5em;
+    letter-spacing: .1em;
     padding-top: 20px;
     text-align: left;
 }
@@ -327,7 +332,7 @@
 .about_explain_txt p{
     font-size: clamp(16px,2.083vw, 16px);
     padding: 0px 30px;
-    letter-spacing: .4em ;
+    letter-spacing: .2em ;
     line-height: 2.2em;
     padding-top: 52px;
     width: 80%;

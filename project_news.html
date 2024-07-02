@@ -16,19 +16,20 @@
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
-        //導覽列
-        function openNav(){
-            var sidepanel = document.getElementById("mySidepanel");
-            if(window.innerWidth <= 768){
-                sidepanel.style.width = "100%";
-            } else {
-                sidepanel.style.width = "40%";
-            }
-        }
-        function closeNav(){
-            document.getElementById("mySidepanel").style.width = "0";
-        }
-    </script>
+    //導覽列
+    function openNav(){
+    document.getElementById("mySidepanel").style.width = "100vw";
+    document.getElementById("mySidepanel").style.height = "100%";
+    if(window.innerWidth <= 768){
+        sidepanel.style.width = "100%";
+    } else {
+        sidepanel.style.width = "60%";
+    }
+    }
+    function closeNav(){
+        document.getElementById("mySidepanel").style.width = "0";
+    }
+</script>
 </head>
 <body>
     <div class="hender">
