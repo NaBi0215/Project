@@ -27,7 +27,7 @@
     font-size: clamp(22px,2.864vw, 22px);
     color: white;
     display: block;
-    padding: 30px 45%;
+    padding: 2% 42%;
     transition: 0.3s;
 }
 .sidepanel a:hover {

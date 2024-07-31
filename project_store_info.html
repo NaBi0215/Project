@@ -91,9 +91,9 @@
         </div>
     </div>
     <div class="googlemap">
-        <div class="here_pic">
+        <!-- <div class="here_pic">
             <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script><lottie-player src="https://lottie.host/2f0eecc5-b55e-4f97-9e10-5e1c033b7994/pkzAqb13sj.json" background="##ffffff" speed="1" style="width: 110px; height: 110px" loop autoplay direction="1" mode="normal"></lottie-player>
-        </div>
+        </div> -->
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d748.908389536206!2d121.31518654261158!3d24.98876752960401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34681ee4c0a479dd%3A0x6a31ebad228433a2!2zMzMw5qGD5ZyS5biC5qGD5ZyS5Y2A5ZCJ5p6X6Lev!5e0!3m2!1szh-TW!2stw!4v1713774104703!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <div class="plant_pic"></div>
     </div>
@@ -138,7 +138,7 @@
                 // 設定閾值，表示使用者滑到元素上方的多遠時觸發效果
                 var threshold = window.innerHeight * 0.8;
                 
-                // 如果元素進入視窗上方閾值內，則添加.fade-in類，觸發淡入效果
+                // 如果元素進入視窗上方閾值內，則插入動畫
                 if (elementTop < threshold) {
                     let x = document.querySelector('.plant_pic');
                     x.innerHTML = `<dotlottie-player 
